@@ -32,12 +32,12 @@ export default function Navbar() {
                         </svg>
                     </button>
 
-                    <div className="hidden lg:flex lg:items-center lg:space-x-8">
+                    <div className="hidden bg-blue-100 p-4 rounded-full lg:flex lg:items-center lg:space-x-8">
                         <ul className="flex space-x-6 items-center font-medium">
                             <li>
                                 <NavLink to='/'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
                                     }
                                 >
                                     Home
@@ -46,7 +46,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/about'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
                                     }
                                 >
                                     About Us
@@ -56,7 +56,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/products'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
                                     }
                                 >
                                     Our Products
@@ -65,7 +65,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/contact'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
                                     }
                                 >
                                     Contact Us
