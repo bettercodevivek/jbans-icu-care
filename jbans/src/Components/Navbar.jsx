@@ -10,8 +10,8 @@ export default function Navbar() {
     };
 
     return (
-        <header className="sticky top-0 z-50 bg-white shadow">
-            <nav className="bg-white border-b border-gray-200 px-4 lg:px-8 py-2.5">
+        <header className="sticky top-0 z-50 bg-white">
+            <nav className="bg-white px-4 lg:px-8 py-2.5">
                 <div className="flex items-center justify-between mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
