@@ -3,7 +3,7 @@ import React from "react";
 
 export default function About(){
     return(
-       <div className="h-dvh w-dvw">
+       <div className=" ">
         This is about page
        </div>
     );
