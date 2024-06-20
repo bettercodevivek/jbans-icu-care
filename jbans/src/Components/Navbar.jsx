@@ -101,23 +101,13 @@ export default function Navbar() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/profile'
+                            <NavLink to='/about'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
                                     `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-blue-500" : "text-gray-900"} hover:bg-gray-200 hover:text-blue-700 transition-transform transform hover:scale-105`
                                 }
                             >
-                                <FiUser className="w-5 h-5" /> <span>Corporate Profile</span>
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/vision'
-                                onClick={toggleSidebar}
-                                className={({ isActive }) =>
-                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-blue-500" : "text-gray-900"} hover:bg-gray-200 hover:text-blue-700 transition-transform transform hover:scale-105`
-                                }
-                            >
-                                <FiEye className="w-5 h-5" /> <span>Our Vision</span>
+                                <FiEye className="w-5 h-5" /> <span>About Us</span>
                             </NavLink>
                         </li>
                         <li>
