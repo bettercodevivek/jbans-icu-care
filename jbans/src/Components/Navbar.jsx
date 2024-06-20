@@ -52,6 +52,16 @@ export default function Navbar() {
                                     About Us
                                 </NavLink>
                             </li>
+
+                            <li>
+                                <NavLink to='/quality'
+                                    className={({ isActive }) =>
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
+                                    }
+                                >
+                                    Quality and R&D
+                                </NavLink>
+                            </li>
                             
                             <li>
                                 <NavLink to='/products'

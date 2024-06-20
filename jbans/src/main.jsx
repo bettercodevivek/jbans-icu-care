@@ -7,6 +7,7 @@ import Home from './Components/Home'
 import About from './Components/About'
 import Products from './Components/Products'
 import Contact from './Components/Contact.jsx'
+import Quality from './Components/Quality.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     {
       path:'about',
       element:<About/>
+    },
+    {
+      path:'quality',
+      element:<Quality/>
     },
   ,{
       path:'products',
