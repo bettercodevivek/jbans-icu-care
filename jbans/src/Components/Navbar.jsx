@@ -15,14 +15,10 @@ export default function Navbar() {
                 <div className="flex items-center justify-between mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
-                            src="https://i.postimg.cc/Y0S5LMn7/LHD-Human-Care-Logo-1.png"
+                            src="https://i.postimg.cc/NFRZQyzJ/jbans-logo.png"
                             className="h-16"
                             alt="Logo"
                         />
-                        <div className="hidden md:flex flex-col items-start ml-4">
-                            <div className="text-lg font-semibold text-gray-900">LHD Human Care</div>
-                            <div className="text-sm text-gray-600">Crafting Health, Shaping Future</div>
-                        </div>
                     </Link>
 
                     <button
@@ -41,34 +37,26 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-amber-500" : "text-black"} hover:bg-gray-50 hover:text-orange-400`
+                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
                                     }
                                 >
                                     Home
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='/profile'
+                                <NavLink to='/about'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-amber-500" : "text-black"} hover:bg-gray-50 hover:text-orange-400`
+                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
                                     }
                                 >
-                                    Corporate Profile
+                                    About Us
                                 </NavLink>
                             </li>
-                            <li>
-                                <NavLink to='/vision'
-                                    className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-amber-500" : "text-black"} hover:bg-gray-50 hover:text-orange-400`
-                                    }
-                                >
-                                    Our Vision
-                                </NavLink>
-                            </li>
+                            
                             <li>
                                 <NavLink to='/products'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-amber-500" : "text-black"} hover:bg-gray-50 hover:text-orange-400`
+                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
                                     }
                                 >
                                     Our Products
@@ -77,7 +65,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/contact'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-amber-500" : "text-black"} hover:bg-gray-50 hover:text-orange-400`
+                                        `block py-2 px-4 rounded duration-200 ${isActive ? "text-blue-500" : "text-black"} hover:bg-gray-50 hover:text-blue-400`
                                     }
                                 >
                                     Contact Us
