@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'; // Make sure you have react-router-dom 
 export default function Hero() {
   const slides = [
     {
-      image: "https://i.postimg.cc/pLbN3P6G/madison-agardi-QNrjcp90t-Vc-unsplash-1.jpg",
+      image: "https://i.postimg.cc/ZRtfzRgH/mohammad-shahhosseini-g-UTHMBC75jw-unsplash-1.webp",
       title: "WHO WE ARE",
       description: "J-BANS ICU CARE PVT. LTD. is a privately owned company established to manufacture and market parenteral and injectable drugs with the help of right technology and then market them.",
       link: "/who-we-are"
@@ -83,7 +83,7 @@ export default function Hero() {
               </div>
               <Link 
                 to='/products'
-                className="px-4 py-2 bg-white text-black rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black lg:cursor-pointer"
+                className="px-4 py-2 bg-white text-black rounded-3xl shadow-lg transition-transform duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black lg:cursor-pointer"
               >
                 Check Our Products
               </Link>
