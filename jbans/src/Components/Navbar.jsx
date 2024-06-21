@@ -16,7 +16,7 @@ export default function Navbar() {
                     <Link to="/" className="flex items-center">
                         <img
                             src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp"
-                            className="h-16"
+                            className="h-20"
                             alt="Logo"
                         />
                     </Link>
@@ -32,7 +32,7 @@ export default function Navbar() {
                         </svg>
                     </button>
 
-                    <div className="hidden bg-blue-100 p-4 rounded-full lg:flex lg:items-center lg:space-x-8">
+                    <div className="hidden bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 p-4 rounded-full lg:flex lg:items-center lg:space-x-8">
                         <ul className="flex space-x-6 items-center font-medium">
                             <li>
                                 <NavLink to='/'
@@ -128,6 +128,16 @@ export default function Navbar() {
                                 }
                             >
                                 <FiBox className="w-5 h-5" /> <span>Our Products</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/quality'
+                                onClick={toggleSidebar}
+                                className={({ isActive }) =>
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-blue-500" : "text-gray-900"} hover:bg-gray-200 hover:text-blue-700 transition-transform transform hover:scale-105`
+                                }
+                            >
+                                <FiBox className="w-5 h-5" /> <span>Quality and R&D</span>
                             </NavLink>
                         </li>
                         <li>
