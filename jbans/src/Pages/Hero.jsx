@@ -8,17 +8,16 @@ export default function Hero() {
       description: "J-BANS ICU CARE PVT. LTD. is a privately owned company established to manufacture and market parenteral and injecctible drugs with the help of right technology and then market them."
     },
     {
-      image: "https://i.postimg.cc/SQ82jpBC/greg-rosenke-GOWz0z-Tf-v-Y-unsplash-1.jpg",
+      image: "https://i.postimg.cc/T1rpsrVC/lucas-vasques-9vn-ACv-X2748-unsplash-1.jpg",
       title: "WHAT WE MAKE",
       description:"We manufacture and market a wide range of therapeutic drugs like Analgesics, Anesthetics , Antiemetics and Anti-infectives. We use sterile and aseptic techniques, backed up with the science of Targeted Delivery System to produce supreme quality drugs."
     },
     {
-      image: "https://i.postimg.cc/T1rpsrVC/lucas-vasques-9vn-ACv-X2748-unsplash-1.jpg",
+      image: "https://i.postimg.cc/SQ82jpBC/greg-rosenke-GOWz0z-Tf-v-Y-unsplash-1.jpg",
       title: "OUR GEOGRAPHY",
       description: " As a company, we plan to cater to various developed markets like USA,UK,Germany,Spain,Australia. This will be accomplished by a continous investment in Research and Development along with an experienced team of researchers, and other professionals working together."
     }
   ];
-  
   const [currentIndex, setCurrentIndex] = useState(0);
   const slideInterval = useRef(null);
 
