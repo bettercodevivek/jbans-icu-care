@@ -15,7 +15,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
-                            src="https://i.postimg.cc/NFRZQyzJ/jbans-logo.png"
+                            src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp"
                             className="h-16"
                             alt="Logo"
                         />
