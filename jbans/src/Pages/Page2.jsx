@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Page2() {
   return (
-    <div className="p-6  min-h-screen flex justify-center items-center">
+    <div className="p-6  relative -top-12 lg:top-0 md:top-0 sm:top-0 flex justify-center items-center">
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-8 md:gap-12 lg:gap-16">
         
         {/* Card Container */}
