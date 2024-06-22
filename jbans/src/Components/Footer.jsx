@@ -14,8 +14,8 @@ export default function Footer() {
                     <a href="#" className="flex justify-center mb-4">
                         <img src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" alt="Logo" className="h-20 w-32"/>
                     </a>
-                    <h2 className="text-2xl lg:text-3xl font-bold mb-1">Your Company</h2>
-                    <p className="text-md lg:text-lg text-gray-300">Excellence in Every Step</p>
+                    <h2 className="text-2xl lg:text-3xl font-bold mb-1">J-BANS ICU CARE</h2>
+                    <p className="text-md lg:text-lg text-black">QUALITY WITH INNOVATION</p>
                 </div>
 
                 {/* Email Button */}
@@ -42,8 +42,8 @@ export default function Footer() {
 
                     {/* Developer Credits */}
                     <div className="flex flex-col items-center lg:items-end space-y-4 lg:w-1/3">
-                        <h3 className="text-lg font-semibold">Developer</h3>
-                        <a href="https://yourdeveloperlink.com" className="text-blue-400 transition hover:text-blue-600">Your Developer</a>
+                        <h3 className="text-lg font-semibold">Designed and Developed by</h3>
+                        <a href="https://yourdeveloperlink.com" className=" text-black bg-inherit backdrop-blur-xl rounded-full drop-shadow-lg p-4 transition hover:text-blue-600">BetterCodeVivek</a>
                     </div>
 
                     {/* Back to Top Button */}
