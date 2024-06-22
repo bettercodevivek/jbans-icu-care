@@ -34,16 +34,18 @@ export default function Footer() {
                     <div className="flex flex-col items-center lg:items-start space-y-4 lg:w-1/3">
                         <h3 className="text-lg font-semibold">Quick Links</h3>
                         <nav className="flex flex-col space-y-3">
-                            <a href="#about" className="transition hover:text-blue-400">About</a>
-                            <a href="#services" className="transition hover:text-blue-400">Services</a>
-                            <a href="#contact" className="transition hover:text-blue-400">Contact</a>
+                        <a href="#about" className="transition hover:text-blue-400">Home</a>
+                            <a href="#about" className="transition hover:text-blue-400">About Us</a>
+                            <a href="#services" className="transition hover:text-blue-400">Our Products</a>
+                            <a href="#services" className="transition hover:text-blue-400">Quality and R&D</a>
+                            <a href="#contact" className="transition hover:text-blue-400">Contact Us</a>
                         </nav>
                     </div>
 
                     {/* Developer Credits */}
-                    <div className="flex flex-col items-center lg:items-end space-y-4 lg:w-1/3">
-                        <h3 className="text-lg font-semibold">Designed and Developed by</h3>
-                        <a href="https://yourdeveloperlink.com" className=" text-black bg-inherit backdrop-blur-xl rounded-full drop-shadow-lg p-4 transition hover:text-blue-600">BetterCodeVivek</a>
+                    <div className="flex flex-col items-center lg:items-center space-y-4 lg:w-1/3">
+                        <h3 className="text-lg font-semibold text-center">Designed and Developed by</h3>
+                        <a href="https://yourdeveloperlink.com" className="text-black bg-inherit backdrop-blur-xl rounded-full drop-shadow-lg p-4 transition hover:text-blue-600 text-center">BetterCodeVivek</a>
                     </div>
 
                     {/* Back to Top Button */}
