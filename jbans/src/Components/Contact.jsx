@@ -18,13 +18,13 @@ export default function Contact() {
                 <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4">
                     <a
                         href="mailto:someone@example.com"
-                        className="px-8 py-4 bg-blue-600 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                        className="px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg shadow-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
                     >
                         Mail Us
                     </a>
                     <a
                         href="tel:+918838930093"
-                        className="px-8 py-4 bg-green-600 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                        className="px-8 py-4 bg-gradient-to-r from-green-500 to-teal-600 rounded-lg shadow-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
                     >
                         Call Us
                     </a>
