@@ -12,7 +12,7 @@ export default function Footer() {
                 {/* Logo Section */}
                 <div className="text-center">
                     <a href="#" className="flex justify-center mb-4">
-                        <img src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" alt="Logo" className="h-20 w-32"/>
+                        <img src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" alt="Logo" className="h-20 w-40"/>
                     </a>
                     <h2 className="text-2xl lg:text-3xl font-bold mb-1">J-BANS ICU CARE</h2>
                     <p className="text-md lg:text-lg text-black">QUALITY WITH INNOVATION</p>
