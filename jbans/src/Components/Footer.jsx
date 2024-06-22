@@ -19,7 +19,7 @@ export default function Footer() {
                         <img 
                             src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" 
                             alt="Logo" 
-                            className="h-16 w-32" 
+                            className="h-20 w-36" 
                         />
                     </a>
                     <h2 className="text-lg lg:text-xl font-bold mb-1">J-BANS ICU CARE</h2>
@@ -56,7 +56,7 @@ export default function Footer() {
                         <h3 className="text-md font-semibold text-center">Designed and Developed by</h3>
                         <a 
                             href="https://yourdeveloperlink.com" 
-                            className="text-black bg-inherit backdrop-blur-xl rounded-full drop-shadow-lg p-2 transition hover:text-blue-600 text-center text-sm"
+                            className="text-black bg-inherit backdrop-blur-xl rounded-full drop-shadow-lg p-4 transition hover:text-blue-600 text-center text-sm"
                         >
                             BetterCodeVivek
                         </a>
