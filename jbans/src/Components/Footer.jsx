@@ -7,12 +7,12 @@ export default function Footer() {
             <div className="absolute inset-0">
                 <img src="https://i.postimg.cc/SQ82jpBC/greg-rosenke-GOWz0z-Tf-v-Y-unsplash-1.jpg" alt="Background" className="w-full h-full object-cover opacity-30"/>
             </div>
-            <div className="relative container mx-auto flex flex-col items-center space-y-8 backdrop-blur-sm bg-gray-800 bg-opacity-60 rounded-lg p-8 shadow-lg">
+            <div className="relative container mx-auto flex flex-col items-center space-y-8 backdrop-blur-sm bg-zinc-100 bg-opacity-60 rounded-lg p-8 shadow-lg">
 
                 {/* Logo Section */}
                 <div className="text-center">
                     <a href="#" className="flex justify-center mb-4">
-                        <img src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" alt="Logo" className="h-12 w-12"/>
+                        <img src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" alt="Logo" className="h-20 w-32"/>
                     </a>
                     <h2 className="text-2xl lg:text-3xl font-bold mb-1">Your Company</h2>
                     <p className="text-md lg:text-lg text-gray-300">Excellence in Every Step</p>
