@@ -11,7 +11,7 @@ export default function Footer() {
                     className="w-full h-full object-cover opacity-30" 
                 />
             </div>
-            <div className="relative container mx-auto flex flex-col items-center space-y-4 backdrop-blur-sm bg-zinc-100 bg-opacity-60 rounded-lg p-4 shadow-lg">
+            <div className="relative container mx-auto flex flex-col items-center space-y-4 backdrop-blur-sm bg-zinc-100 bg-opacity-50 rounded-lg p-4 shadow-lg">
 
                 {/* Logo Section */}
                 <div className="text-center">
