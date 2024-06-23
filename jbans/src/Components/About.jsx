@@ -25,25 +25,29 @@ const About = () => {
    </div>
 
    {/* Founder Card */}
-   <div className="max-w-md p-8 bg-white bg-opacity-20 backdrop-blur-lg rounded-lg border border-gray-200 shadow-lg">
-     <div className="flex flex-col items-center">
-       <img
-         src="https://your-image-url.com/founder.jpg"
-         alt="Founder"
-         className="w-32 h-32 mb-4 rounded-full shadow-lg"
-       />
-       <h2 className="mb-4 text-2xl font-bold text-white">Founder Name</h2>
-       <p className="text-center text-gray-300">
-         Welcome to our company! We are dedicated to providing the best services to our clients. Our mission is to innovate and lead in our industry.
-       </p>
-     </div>
-   </div>
+   <div class="max-w-md bg-white bg-opacity-20 backdrop-blur-lg rounded-lg border border-gray-200 shadow-lg overflow-hidden">
+  <div class="relative">
+    <img src="https://i.postimg.cc/k431yXP0/IMG-20240623-WA0009-1-1.webp" alt="Founder" class="w-full h-64"/>
+  </div>
+  <div class="p-6">
+    <h2 class="mb-2 text-2xl font-bold text-white text-center">Founder Name</h2>
+    <p class="text-sm text-gray-300">
+      Dear Visitors,
+
+      Welcome to J-BANS ICU CARE PVT. LTD.
+
+      I am delighted to have you here. At J-BANS ICU CARE PVT. LTD. , we are dedicated to pioneering new frontiers in healthcare through innovation and excellence. Whether you are exploring our latest products or learning more about our journey, we are committed to providing you with trusted resources and support.
+
+      Thank you for joining us on our mission to enhance global health and well-being. Your interest and support mean a lot to us.
+    </p>
+  </div>
+</div>
+
+  
  </div>
 
  {/* Animation (using Tailwind CSS animations) */}
- <div className="absolute bottom-0 w-full animate-bounce">
-   <div className="text-center text-white">Scroll Down</div>
- </div>
+
 </div>
   );
 };
