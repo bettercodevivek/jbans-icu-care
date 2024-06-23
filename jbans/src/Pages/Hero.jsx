@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import CountUp from 'react-countup';
 
 const Hero = () => {
@@ -14,19 +14,19 @@ const Hero = () => {
       title: "Who we are?",
       description: "J-BANS ICU CARE PVT. LTD. is a privately owned company established to manufacture and market parenteral and injectible drugs with help of right technology and then market them.These drugs are niche,knowledge intensive and of critical therapeutic segments.",
       buttonText: "Check our Products",
-      link: "/products", // Example link for Button 1
+      link: "/products",
     },
     {
       title: "What we make?",
       description: "We manufacture and market a wide range of therapeutic drugs like Analgesics, Anesthetics, Antiemetics, Anti-infectives. We use sterile and aseptic techniques,backed up with science of targeted delivery system to produce supreme quality drugs.",
       buttonText: "Check our Products",
-      link: "/products", // Example link for Button 2
+      link: "/products",
     },
     {
       title: "Our Geography",
       description: "As a company we plan to cater to various developed markets like USA,UK,Germany,Spain,Australia. This will be accomplished by continous investment in Research & Development along with an experienced team of researchers, clinicians and professionals working together.",
       buttonText: "Check our Products",
-      link: "/products", // Example link for Button 3
+      link: "/products",
     },
   ];
 
@@ -41,19 +41,19 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-full -top-4">
-      <div className="relative mx-auto top-16 z-0 opacity-90 rounded-3xl aspect-video w-full md:w-9/12 sm:w-11/12 lg:w-9/12 xl:w-9/12 2xl:w-7/12">
+    <div className="relative flex flex-col items-center justify-center">
+      {/* Slideshow */}
+      <div className="relative w-full max-w-screen-lg h-80 md:min-h-screen lg:min-h-screen xl:min-h-screen mx-4 md:mx-auto mt-8 rounded-3xl overflow-hidden">
         {ImageSlide.map((image, index) => (
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           >
             <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-3xl" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50 rounded-3xl">
-              <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">{slidesContent[index].title}</h1>
-              <p className="text-lg py-8 md:text-xl lg:text-2xl">{slidesContent[index].description}</p>
-              {/* Use Link component instead of button */}
-              <Link to={slidesContent[index].link} className="bg-red-600 text-white font-bold py-2 px-4 mt-4 rounded">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 rounded-3xl text-white px-4 md:px-8">
+              <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-center font-semibold mb-4">{slidesContent[index].title}</h1>
+              <p className="text-sm md:text-base lg:text-lg xl:text-xl text-center mb-4 px-2">{slidesContent[index].description}</p>
+              <Link to={slidesContent[index].link} className="bg-red-600 text-white font-bold py-2 px-4 rounded hover:bg-red-700 transition-colors duration-300">
                 {slidesContent[index].buttonText}
               </Link>
             </div>
@@ -61,31 +61,27 @@ const Hero = () => {
         ))}
       </div>
 
-      <div className="relative bg-inherit backdrop-blur-lg shadow-lg flex flex-wrap items-center justify-around w-11/12 sm:w-4/5 md:h-44 lg:h-44 mx-auto left-0 right-0 top-16 md:top-0 lg:top-0 -mt-8 rounded-3xl border-2">
-        <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={7} delay={3} />+</span>
-          <br />
-          <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Years of Experience</span>
+      {/* Statistics */}
+      <div className="relative bottom-12 bg-inherit bg-opacity-80 backdrop-blur-lg shadow-lg rounded-3xl border-2 w-full max-w-3xl mx-4 md:mx-auto p-4 md:p-8 grid grid-cols-3 md:grid-cols-5 gap-4 text-center">
+        <div className="flex flex-col items-center">
+          <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={7} delay={3} />+</span>
+          <span className="text-xs md:text-sm lg:text-base">Years of Experience</span>
         </div>
-        <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={165000} delay={3} />+</span>
-          <br />
-          <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Active Clients</span>
+        <div className="flex flex-col items-center">
+          <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={165000} delay={3} />+</span>
+          <span className="text-xs md:text-sm lg:text-base">Active Clients</span>
         </div>
-        <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={450} delay={3} />+</span>
-          <br />
-          <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Employees</span>
+        <div className="flex flex-col items-center">
+          <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={450} delay={3} />+</span>
+          <span className="text-xs md:text-sm lg:text-base">Employees</span>
         </div>
-        <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={10} delay={3} />+</span>
-          <br />
-          <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Corporate Clients</span>
+        <div className="flex flex-col items-center">
+          <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={10} delay={3} />+</span>
+          <span className="text-xs md:text-sm lg:text-base">Corporate Clients</span>
         </div>
-        <div className="text-center p-2">
-          <span className="font-bold text-xl md:text-3xl lg:text-3xl sm:text-3xl"><CountUp end={150} delay={3} />+</span>
-          <br />
-          <span className="text-sm md:text-lg lg:text-lg sm:text-lg">Products</span>
+        <div className="flex flex-col items-center">
+          <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={150} delay={3} />+</span>
+          <span className="text-xs md:text-sm lg:text-base">Products</span>
         </div>
       </div>
     </div>
