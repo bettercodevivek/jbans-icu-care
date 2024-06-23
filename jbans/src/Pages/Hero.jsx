@@ -50,10 +50,10 @@ const Hero = () => {
           >
             <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-3xl" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50 rounded-3xl">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">{slidesContent[index].title}</h1>
+              <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">{slidesContent[index].title}</h1>
               <p className="text-lg py-8 md:text-xl lg:text-2xl">{slidesContent[index].description}</p>
               {/* Use Link component instead of button */}
-              <Link to={slidesContent[index].link} className="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 mt-4 rounded">
+              <Link to={slidesContent[index].link} className="bg-red-600 text-white font-bold py-2 px-4 mt-4 rounded">
                 {slidesContent[index].buttonText}
               </Link>
             </div>
