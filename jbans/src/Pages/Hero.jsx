@@ -13,19 +13,19 @@ const Hero = () => {
     {
       title: "Who we are?",
       description: "J-BANS ICU CARE PVT. LTD. is a privately owned company established to manufacture and market parenteral and injectible drugs with help of right technology and then market them.These drugs are niche,knowledge intensive and of critical therapeutic segments.",
-      buttonText: "Button 1",
+      buttonText: "Check our Products",
       link: "/products", // Example link for Button 1
     },
     {
       title: "What we make?",
       description: "We manufacture and market a wide range of therapeutic drugs like Analgesics, Anesthetics, Antiemetics, Anti-infectives. We use sterile and aseptic techniques,backed up with science of targeted delivery system to produce supreme quality drugs.",
-      buttonText: "Button 2",
+      buttonText: "Check our Products",
       link: "/products", // Example link for Button 2
     },
     {
       title: "Our Geography",
-      description: "Description for Slide 3",
-      buttonText: "As a company we plan to cater to various developed markets like USA,UK,Germany,Spain,Australia. This will be accomplished by continous investment in Research & Development along with an experienced team of researchers, clinicians and professionals working together.",
+      description: "As a company we plan to cater to various developed markets like USA,UK,Germany,Spain,Australia. This will be accomplished by continous investment in Research & Development along with an experienced team of researchers, clinicians and professionals working together.",
+      buttonText: "Check our Products",
       link: "/products", // Example link for Button 3
     },
   ];
@@ -51,9 +51,9 @@ const Hero = () => {
             <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-3xl" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50 rounded-3xl">
               <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">{slidesContent[index].title}</h1>
-              <p className="text-lg md:text-xl lg:text-2xl">{slidesContent[index].description}</p>
+              <p className="text-lg py-8 md:text-xl lg:text-2xl">{slidesContent[index].description}</p>
               {/* Use Link component instead of button */}
-              <Link to={slidesContent[index].link} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded">
+              <Link to={slidesContent[index].link} className="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 mt-4 rounded">
                 {slidesContent[index].buttonText}
               </Link>
             </div>
