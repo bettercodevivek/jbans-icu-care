@@ -59,7 +59,7 @@ const TestimonialSlider = ({ testimonials }) => {
               <div className="flex flex-col items-center p-4">
                 <div className="w-full h-40 bg-gradient-to-tr from-red-500 via-red-400 to-red-600 flex justify-center items-center">
                   <img
-                    className="w-32 h-32 object-cover object-center rounded-full border-4 border-white shadow-lg transform transition-transform duration-300 hover:scale-110"
+                    className="w-32 h-32 object-cover object-center aspect-square rounded-full border-4 border-white shadow-lg transform transition-transform duration-300 hover:scale-110"
                     src={testimonial.image}
                     alt={testimonial.name}
                   />
@@ -119,17 +119,17 @@ const Page3 = () => {
     },
     {
       id: 2,
-      image: 'https://i.postimg.cc/7LvVj3x5/Regency-logo-250x75-1.webp',
+      image: 'https://i.postimg.cc/J0P827Zh/Regency-logo-250x75-1-removebg-preview-1.png',
       name: 'Regency Hospital,Lucknow',
     },
     {
       id: 3,
-      image: 'https://i.postimg.cc/LszTSJXN/aims-india-logo.webp',
+      image: 'https://i.postimg.cc/8sQRxDSq/aims-india-logo-1.png',
       name: 'Asian Institute of Medical Sciences',
     },
     {
       id: 4,
-      image: 'https://i.postimg.cc/4xHP8LTC/koppal.webp',
+      image: 'https://i.postimg.cc/HWQ97c9m/koppal-logo.jpg',
       name: 'Koppal Institue of Medical Sciences',
     },
     {
@@ -140,7 +140,7 @@ const Page3 = () => {
   ];
 
   return (
-    <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8 relative top-16 mb-16 lg:top-8 md:top-8">
+    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative top-16 mb-16 lg:top-8 md:top-8">
       <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8 md:mb-12 text-red-600">
         Corporate Partners in Healthcare
       </h2>
