@@ -114,39 +114,29 @@ const Page3 = () => {
   const testimonials = [
     {
       id: 1,
-      image: 'https://i.postimg.cc/FznNJkZ9/fortis-logo.gif',
-      name: 'Fortis Delhi',
+      image: 'https://i.postimg.cc/B6cr2PJr/aiims-delhi.jpg',
+      name: 'AIIMS Delhi',
     },
     {
       id: 2,
-      image: 'https://i.postimg.cc/TYyk65ZT/logo-icon.png',
-      name: 'Nutema Hospital,Meerut',
+      image: 'https://i.postimg.cc/7LvVj3x5/Regency-logo-250x75-1.webp',
+      name: 'Regency Hospital,Lucknow',
     },
     {
       id: 3,
-      image: 'https://i.postimg.cc/kGGTD2GF/yashoda.jpg',
-      name: 'Yashoda Hospital,Ghaziabad',
+      image: 'https://i.postimg.cc/LszTSJXN/aims-india-logo.webp',
+      name: 'Asian Institute of Medical Sciences',
     },
     {
       id: 4,
-      image: 'https://i.postimg.cc/fLBHwczR/healers101.png',
-      name: 'Healers Hospital,Bijnor',
+      image: 'https://i.postimg.cc/4xHP8LTC/koppal.webp',
+      name: 'Koppal Institue of Medical Sciences',
     },
     {
       id: 5,
-      image: 'https://i.postimg.cc/rpWXFY3F/logo-medanta.jpg;',
-      name: 'Medanta Hospital,New Delhi',
+      image: 'https://i.postimg.cc/L5hLJ59d/IMG-20240623-WA0017-1.webp',
+      name: 'Shobhit Mediworld',
     },
-    {
-        id: 6,
-        image: 'https://i.postimg.cc/DfpCHPpC/optima.jpg',
-        name: 'Optima Hospital,Meerut',
-      },
-      {
-        id: 7,
-        image: 'https://i.postimg.cc/kGHfS7tr/rml.jpg',
-        name: 'RML Hospital,New Delhi',
-      },
   ];
 
   return (
