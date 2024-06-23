@@ -18,14 +18,14 @@ const Hero = () => {
     },
     {
       title: "What we make?",
-      description: "Description for Slide 2",
+      description: "We manufacture and market a wide range of therapeutic drugs like Analgesics, Anesthetics, Antiemetics, Anti-infectives. We use sterile and aseptic techniques,backed up with science of targeted delivery system to produce supreme quality drugs.",
       buttonText: "Button 2",
       link: "/products", // Example link for Button 2
     },
     {
       title: "Our Geography",
       description: "Description for Slide 3",
-      buttonText: "Button 3",
+      buttonText: "As a company we plan to cater to various developed markets like USA,UK,Germany,Spain,Australia. This will be accomplished by continous investment in Research & Development along with an experienced team of researchers, clinicians and professionals working together.",
       link: "/products", // Example link for Button 3
     },
   ];
