@@ -3,7 +3,7 @@ import React from "react";
 export default function Page2() {
   return (
     <div className="p-6  relative -top-32 lg:-top-4 md:-top-4 sm:-top-4 flex flex-col gap-8 justify-center items-center">
-        <h1 className='text-3xl text-center font-bold'> Our Bestselling Products</h1>
+        <h1 className='text-4xl text-red-600 text-center font-extrabold'> Our Bestselling Products</h1>
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-8 md:gap-12 lg:gap-16">
         {/* Card Container */}
         <div className="bg-gradient-to-r from-red-500 via-red-500 to-red-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-8 max-w-lg md:max-w-md lg:max-w-lg flex flex-col transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
