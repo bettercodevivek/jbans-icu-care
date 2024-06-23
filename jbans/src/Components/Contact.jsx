@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="relative min-h-screen flex items-center justify-center text-white bg-black">
             {/* Full-Screen Background Image */}
             <img
-                src="https://i.postimg.cc/9M6d4Tf6/markus-spiske-Dn-Bt-FBnql-Rc-unsplash-1.webp"
+                src="https://i.postimg.cc/fb6Z1Tyz/world-1185076-1920.webp"
                 className="absolute inset-0 w-full h-full object-cover opacity-60"
                 alt="Background"
             />
@@ -14,21 +14,7 @@ export default function Contact() {
             <div className="relative z-10 p-6 lg:p-12 flex flex-col items-center text-center space-y-10">
                 <h1 className="text-4xl lg:text-6xl font-bold drop-shadow-lg">Contact Us</h1>
                 <p className="text-lg lg:text-2xl drop-shadow-lg">We'd love to hear from you</p>
-                
-                <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4">
-                    <a
-                        href="mailto:someone@example.com"
-                        className="px-12 py-4 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg shadow-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
-                    >
-                        Mail Us
-                    </a>
-                    <a
-                        href="tel:+918838930093"
-                        className="px-12 py-4 bg-gradient-to-r from-green-500 to-teal-600 rounded-lg shadow-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
-                    >
-                        Call Us
-                    </a>
-                </div>
+    
                 
                 <div className="mt-10 max-w-md w-full bg-gray-800 bg-opacity-80 p-4 rounded-lg shadow-lg">
                     <h2 className="text-2xl font-semibold mb-4">Our Location</h2>
@@ -43,6 +29,21 @@ export default function Contact() {
                             className="rounded-lg"
                         ></iframe>
                     </div>
+                </div>
+
+                <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4">
+                    <a
+                        href="mailto:someone@example.com"
+                        className="px-12 py-4 bg-gradient-to-r from-red-600 to-red-800 rounded-lg shadow-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
+                    >
+                        Mail Us
+                    </a>
+                    <a
+                        href="tel:+918838930093"
+                        className="px-12 py-4 bg-gradient-to-r from-blue-700 to-blue-900 rounded-lg shadow-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
+                    >
+                        Call Us
+                    </a>
                 </div>
             </div>
         </div>

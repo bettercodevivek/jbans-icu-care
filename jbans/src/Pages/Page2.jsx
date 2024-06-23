@@ -6,9 +6,9 @@ export default function Page2() {
         <h1 className='text-3xl text-center font-bold'> Our Bestselling Products</h1>
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-8 md:gap-12 lg:gap-16">
         {/* Card Container */}
-        <div className="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-8 max-w-lg md:max-w-md lg:max-w-lg flex flex-col transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
-          <h1 className="text-3xl font-bold text-gray-800 mb-6">Product Name</h1>
-          <p className="text-gray-600 leading-relaxed">
+        <div className="bg-gradient-to-r from-red-500 via-red-500 to-red-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-8 max-w-lg md:max-w-md lg:max-w-lg flex flex-col transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
+          <h1 className="text-3xl font-bold text-white mb-6">Product Name</h1>
+          <p className="text-white leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque eum eius corporis eaque sint odit reprehenderit debitis ex, unde porro praesentium dolorum nostrum cum laborum possimus consequatur voluptatum saepe
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque eum eius corporis eaque sint odit reprehenderit debitis ex, unde porro praesentium dolorum nostrum cum laborum possimus consequatur voluptatum saepe .
           </p>
@@ -42,9 +42,9 @@ export default function Page2() {
         </div>
 
         {/* Card Container */}
-        <div className="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-8 max-w-lg md:max-w-md lg:max-w-lg flex flex-col transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
-          <h1 className="text-3xl font-bold text-gray-800 mb-6">Product Name</h1>
-          <p className="text-gray-600 leading-relaxed">
+        <div className="bg-gradient-to-r from-red-500 via-red-500 to-red-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-8 max-w-lg md:max-w-md lg:max-w-lg flex flex-col transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
+          <h1 className="text-3xl font-bold text-white mb-6">Product Name</h1>
+          <p className="text-white leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque eum eius corporis eaque sint odit reprehenderit debitis ex, unde porro praesentium dolorum nostrum cum laborum possimus consequatur voluptatum saepe
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque eum eius corporis eaque sint odit reprehenderit debitis ex, unde porro praesentium dolorum nostrum cum laborum possimus consequatur voluptatum saepe .
           </p>
@@ -52,9 +52,9 @@ export default function Page2() {
       </div>
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-8 md:gap-12 lg:gap-16">
         {/* Card Container */}
-        <div className="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-8 max-w-lg md:max-w-md lg:max-w-lg flex flex-col transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
-          <h1 className="text-3xl font-bold text-gray-800 mb-6">Product Name</h1>
-          <p className="text-gray-600 leading-relaxed">
+        <div className="bg-gradient-to-r from-red-500 via-red-500 to-red-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-8 max-w-lg md:max-w-md lg:max-w-lg flex flex-col transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
+          <h1 className="text-3xl font-bold text-white mb-6">Product Name</h1>
+          <p className="text-white leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque eum eius corporis eaque sint odit reprehenderit debitis ex, unde porro praesentium dolorum nostrum cum laborum possimus consequatur voluptatum saepe
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque eum eius corporis eaque sint odit reprehenderit debitis ex, unde porro praesentium dolorum nostrum cum laborum possimus consequatur voluptatum saepe .
           </p>
