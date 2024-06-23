@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'; // Make sure you have react-router-dom 
 export default function Hero() {
   const slides = [
     {
-      image: "https://i.postimg.cc/ZRtfzRgH/mohammad-shahhosseini-g-UTHMBC75jw-unsplash-1.webp",
+      image: "https://i.postimg.cc/cHbgf63W/pexels-gabby-k-6289065.webp",
       title: "WHO WE ARE",
       description: "J-BANS ICU CARE PVT. LTD. is a privately owned company established to manufacture and market parenteral and injectable drugs with the help of right technology and then market them.",
       link: "/who-we-are"
     },
     {
-      image: "https://i.postimg.cc/T1rpsrVC/lucas-vasques-9vn-ACv-X2748-unsplash-1.jpg",
+      image: "https://i.postimg.cc/K8PMCZ67/img27.webp",
       title: "WHAT WE MAKE",
       description: "We manufacture and market a wide range of therapeutic drugs like Analgesics, Anesthetics, Antiemetics and Anti-infectives. We use sterile and aseptic techniques, backed up with the science of Targeted Delivery System to produce supreme quality drugs.",
       link: "/what-we-make"
@@ -28,7 +28,7 @@ export default function Hero() {
   useEffect(() => {
     slideInterval.current = setInterval(() => {
       setCurrentIndex(prevIndex => (prevIndex + 1) % slides.length);
-    }, 4000); // Change slide every 4 seconds
+    }, 6000); // Change slide every 4 seconds
 
     return () => {
       clearInterval(slideInterval.current);
