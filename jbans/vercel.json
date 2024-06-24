@@ -1,1 +1,13 @@
-{ "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] }
+
+{
+    "builds": [
+      {
+        "src": "src/**/*",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      }
+    ],
+    "routes": [{ "src": "/[^.]+", "dest": "/inde.html", "status": 200 }]
+  }
