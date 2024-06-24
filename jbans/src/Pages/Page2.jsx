@@ -3,8 +3,9 @@ import React from "react";
 export default function Page2() {
   return (
     <div className="p-6 relative top-12 flex flex-col mb-12 gap-8 justify-center items-center">
-      <h1 className="md:text-4xl mb-8 lg:text-4xl text-3xl text-red-600 text-center font-extrabold">
-        Our Bestselling Products
+      <h1 className="md:text-2xl mb-8 lg:text-2xl text-2xl text-red-600 text-center font-bold">
+      J-BANS  has always had a focus on chronic disease management. Critical care was yet another such venture for J BANS . We have been serving ICUs, CCus and Trauma centers across India with ourgamut of high quality Anti-infective.
+
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-8 md:gap-12 lg:gap-16">
         {/* Product 1 */}
