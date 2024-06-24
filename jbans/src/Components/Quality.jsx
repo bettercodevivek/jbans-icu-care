@@ -31,11 +31,11 @@ const Quality = () => {
               <p className="text-lg text-gray-700 leading-relaxed">
               <ul className="list-disc list-inside">
     <li>Our Technical Competency has been a cornerstone of our rapid growth, supported by our in-house R&D center.</li>
-    <li>J BAND’s research center is a government-approved lab, recognized by the Department of Scientific and Industrial Research (DSIR), under the Ministry of Science and Technology, Govt. of India.</li>
+    <li>J-BANS research center is a government-approved lab, recognized by the Department of Scientific and Industrial Research (DSIR), under the Ministry of Science and Technology, Govt. of India.</li>
     <li>At our research center, we develop formulations, process them until they are stable and ready for commercialization.</li>
     <li>Once formulations are ready, technology is transferred to our manufacturing facility or contract manufacturers.</li>
     <li>Production continues under the supervision of our scientists and skilled technicians to ensure top quality for every product.</li>
-    <li>J BAND’s commitment to meeting the unmet needs of patients is demonstrated by our expert team in the R&D unit.</li>
+    <li>J-BANS commitment to meeting the unmet needs of patients is demonstrated by our expert team in the R&D unit.</li>
     <li>Our R&D team consists of qualified scientists and technicians with pharmaceutical sciences backgrounds and extensive product development experience in solid dosage and sterile preparations.</li>
     <li>The team collaborates with a global network of scientific communities, including companies, universities, and scientists with similar interests.</li>
   </ul>
@@ -67,7 +67,7 @@ const Quality = () => {
   
   <h2 className="text-xl font-semibold mt-4">Manufacturing</h2>
   <ul className="list-disc list-inside">
-    <li>J BANS is committed to meeting the unmet medical needs of the healthcare industry with innovative and quality products.</li>
+    <li>J-BANS is committed to meeting the unmet medical needs of the healthcare industry with innovative and quality products.</li>
     <li>We ensure the highest quality standards, supported by strong R&D, for every product that reaches the end consumer.</li>
     <li>In the initial stage at our research center, we develop formulations and process them until they are stable and ready for commercialization.</li>
     <li>We have partnerships with contract manufacturers to assist in production.</li>
@@ -86,26 +86,9 @@ const Quality = () => {
           </div>
         </section>
 
-        {/* Call to action */}
-        <section className="py-12 text-center">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 mb-4">
-            Learn More About Our Commitment
-          </h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            Discover how we are shaping the future of pharmaceuticals through our dedication to quality assurance and cutting-edge research.
-          </p>
-          <button className="mt-6 bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out">
-            Explore Now
-          </button>
-        </section>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-6">
-        <div className="container mx-auto text-center">
-          <p className="text-sm">&copy; 2024 PharmaHealth. All rights reserved.</p>
-        </div>
-      </footer>
+    
     </div>
   );
 };

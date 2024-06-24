@@ -142,7 +142,7 @@ const Page3 = () => {
   return (
     <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative top-16 mb-16 lg:top-8 md:top-8">
       <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8 md:mb-12 text-red-600">
-        Corporate Partners in Healthcare
+        Our Prime Corporate Customers
       </h2>
       <TestimonialSlider testimonials={testimonials} />
     </div>

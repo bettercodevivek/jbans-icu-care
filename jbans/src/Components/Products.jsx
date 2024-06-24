@@ -45,7 +45,7 @@ const Products = () => {
     },
     {
       id: 9,
-      name: 'J-CETAM ',
+      name: 'PANTOBAN-40 ',
       image: 'https://i.postimg.cc/cHV5Lfc8/IMG-20240624-WA0011.webp',
     },
     {
@@ -80,7 +80,7 @@ const Products = () => {
     },
     {
       id: 16,
-      name: 'AXAMALIK-T',
+      name: 'AXAMIK-T',
       image: 'https://i.postimg.cc/9f0xPL87/IMG-20240624-WA0018.webp',
     },
     {
