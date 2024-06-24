@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 
 const Hero = () => {
   const ImageSlide = [
-    'https://i.postimg.cc/cHbgf63W/pexels-gabby-k-6289065.webp',
+    'https://i.postimg.cc/VkQcTRFb/noah-buscher-x8-ZStuk-S2-PM-unsplash.webp',
     'https://i.postimg.cc/K8PMCZ67/img27.webp',
     'https://i.postimg.cc/Hk3Vk0qP/greg-rosenke-GOWz0zTf_vY-unsplash_(1).webp',
   ];
