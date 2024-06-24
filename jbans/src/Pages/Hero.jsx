@@ -50,7 +50,7 @@ const Hero = () => {
             className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           >
             <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-3xl" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 rounded-3xl text-white px-4 md:px-8">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-10 rounded-3xl text-white px-4 md:px-8">
               <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-center font-semibold mb-4">{slidesContent[index].title}</h1>
               <p className="text-sm md:text-base lg:text-lg xl:text-xl text-center mb-4 px-2">{slidesContent[index].description}</p>
               <Link to={slidesContent[index].link} className="bg-red-600 text-white font-bold py-2 mb-6 px-4 rounded hover:bg-red-700 transition-colors duration-300">
