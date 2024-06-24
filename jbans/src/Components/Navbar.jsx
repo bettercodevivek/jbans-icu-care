@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from 'react-router-dom';
 import { FiHome, FiEye, FiBox, FiMail, FiCheck } from 'react-icons/fi'; 
+import { FaImage } from "react-icons/fa";
 
 export default function Navbar() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -147,6 +148,16 @@ export default function Navbar() {
                                 }
                             >
                                 <FiCheck className="w-5 h-5" /> <span>Quality and R&D</span>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/gallery'
+                                onClick={toggleSidebar}
+                                className={({ isActive }) =>
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-blue-500" : "text-gray-900"} hover:bg-gray-200 hover:text-blue-700 transition-transform transform hover:scale-105`
+                                }
+                            >
+                                <FaImage className="w-5 h-5" /> <span>Gallery</span>
                             </NavLink>
                         </li>
                         <li>
