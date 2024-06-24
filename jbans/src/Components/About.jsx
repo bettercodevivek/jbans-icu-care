@@ -16,7 +16,6 @@ const About = () => {
       <main className="flex-1 container mx-auto px-4 py-8 md:py-16">
         <section className="relative text-center mb-16">
           <h2 className="relative z-10 text-4xl font-semibold text-gray-900 mb-6">
-            Who We Are
           </h2>
           <p className="relative z-10 text-lg md:text-xl text-gray-700 leading-relaxed mx-auto max-w-3xl">
             At J-BANS ICU CARE PVT. LTD. , we are committed to providing high-quality, affordable medications to improve the health and well-being of our community. Our team of experts is dedicated to advancing pharmaceutical science and ensuring the safety and efficacy of our products.
@@ -56,7 +55,7 @@ const About = () => {
 
     {/* Card 3 - About Us */}
     <div className="bg-white rounded-lg shadow-lg p-8">
-      <h2 className="text-4xl font-semibold text-center text-gray-900 mb-6">About Us</h2>
+      <h2 className="text-4xl font-semibold text-center text-gray-900 mb-6">Who We Are</h2>
       <ul className="list-disc list-inside text-lg md:text-xl text-gray-700 leading-relaxed">
         <li>J BANS is a privately-owned healthcare company founded in 2017 and it is a part of J BANS Group of Companies.</li>
         <li>J BANS Group of Companies is engaged in Healthcare.</li>
