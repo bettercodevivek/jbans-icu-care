@@ -58,7 +58,7 @@ export default function Page2() {
           <div className="absolute inset-0 rounded-2xl border-2 border-transparent" />
         </div>
         {/* Card 2 */}
-        <div className="bg-gradient-to-r from-red-500 via-red-500 to-red-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-8 max-w-xs md:max-w-md lg:max-w-lg flex flex-col justify-between transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
+        <div className="bg-gradient-to-r from-teal-500 via-teal-500 to-teal-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-8 max-w-xs md:max-w-md lg:max-w-lg flex flex-col justify-between transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
           <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-white mb-4">
             J-BANS LBU
           </h1>
@@ -96,7 +96,7 @@ export default function Page2() {
           <div className="absolute inset-0 rounded-2xl border-2 border-transparent" />
         </div>
         {/* Card 3 */}
-        <div className="bg-gradient-to-r from-red-500 via-red-500 to-red-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-8 max-w-xs md:max-w-md lg:max-w-lg flex flex-col justify-between transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
+        <div className="bg-gradient-to-r from-pink-500 via-pink-500 to-fuchsia-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-8 max-w-xs md:max-w-md lg:max-w-lg flex flex-col justify-between transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
           <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-white mb-4">
             AGGRABAN
           </h1>
@@ -130,7 +130,7 @@ export default function Page2() {
           <div className="absolute inset-0 rounded-2xl border-2 border-transparent" />
         </div>
         {/* Card 4 */}
-        <div className="bg-gradient-to-r from-red-500 via-red-500 to-red-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-8 max-w-xs md:max-w-md lg:max-w-lg flex flex-col justify-between transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
+        <div className="bg-gradient-to-r from-amber-900 via-amber-800 to-orange-900 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-8 max-w-xs md:max-w-md lg:max-w-lg flex flex-col justify-between transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
           <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-white mb-4">
             GLUCONIT
           </h1>

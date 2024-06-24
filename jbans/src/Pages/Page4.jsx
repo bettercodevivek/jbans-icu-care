@@ -5,7 +5,7 @@ const Page4 = () => {
   const divisions = [
     {
       name: 'Critical Care Division',
-      imageUrl: 'https://i.postimg.cc/SKVkK6Ds/aditya-romansa-5zp0jym2w9-M-unsplash.webp',
+      imageUrl: 'https://i.postimg.cc/BQcKCyvw/marcelo-leal-ta-F3klww-AWA-unsplash.webp',
     },
     {
       name: 'Nayra Tablets Division',

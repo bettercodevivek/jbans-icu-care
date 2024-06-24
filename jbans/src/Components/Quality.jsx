@@ -20,7 +20,7 @@ const Quality = () => {
             <div className="md:w-1/2 mb-8 md:mb-0">
               <img
                 className="w-full rounded-lg shadow-lg"
-                src="https://i.postimg.cc/pLB90ptz/IMG-20240619-WA0004.webp"
+                src="https://i.postimg.cc/t4qVv5ZR/glsun-mall-WNX6uk-1-LV4-unsplash.webp"
                 alt="Quality Assurance"
               />
             </div>
@@ -50,7 +50,7 @@ const Quality = () => {
             <div className="md:w-1/2">
               <img
                 className="w-full rounded-lg shadow-lg"
-                src="https://i.postimg.cc/PqrC0Ttc/IMG-20240619-WA0006.webp"
+                src="https://i.postimg.cc/52sQhCLB/ant-rozetsky-SLIFI67jv5k-unsplash.webp"
                 alt="Research & Development"
               />
             </div>

@@ -59,12 +59,7 @@ const Footer = () => {
                     </button>
                 </div>
             </div>
-            {/* Social links */}
-            <div className="flex justify-center mt-4 space-x-4">
-                <a href="#" className="text-white hover:text-blue-400 transition"><FaInstagram /></a>
-                <a href="#" className="text-white hover:text-blue-400 transition"><FaFacebook /></a>
-                <a href="#" className="text-white hover:text-blue-400 transition"><FaYoutube /></a>
-            </div>
+           
             {/* Copyright */}
             <div className="text-center mt-4 text-sm">
                 <p>&copy; {new Date().getFullYear()} J-BANS ICU CARE. All Rights Reserved.</p>
