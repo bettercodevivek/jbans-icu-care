@@ -6,62 +6,202 @@ const Products = () => {
     {
       id: 1,
       name: 'Product 1',
-      image: 'https://via.placeholder.com/300',
+      image: 'https://i.postimg.cc/BZrdSfhw/IMG-20240619-WA0005.webp',
     },
     {
       id: 2,
       name: 'Product 2',
-      image: 'https://via.placeholder.com/300',
+      image: 'https://i.postimg.cc/907KdLfp/IMG-20240624-WA0004.webp',
     },
     {
       id: 3,
       name: 'Product 3',
-      image: 'https://via.placeholder.com/300',
+      image: 'https://i.postimg.cc/447DRx19/IMG-20240624-WA0005.webp',
     },
     {
       id: 4,
       name: 'Product 4',
-      image: 'https://via.placeholder.com/300',
+      image: 'https://i.postimg.cc/VkRTWrz3/IMG-20240624-WA0006.webp',
     },
     {
         id: 1,
         name: 'Product 1',
-        image: 'https://via.placeholder.com/300',
+        image: 'https://i.postimg.cc/K8FwTrhP/IMG-20240624-WA0007.webp',
       },
       {
         id: 2,
         name: 'Product 2',
-        image: 'https://via.placeholder.com/300',
+        image: 'https://i.postimg.cc/W41yWN3t/IMG-20240624-WA0008.webp',
       },
       {
         id: 3,
         name: 'Product 3',
-        image: 'https://via.placeholder.com/300',
+        image: 'https://i.postimg.cc/1z7jbknB/IMG-20240624-WA0009.webp',
       },
       {
         id: 4,
         name: 'Product 4',
-        image: 'https://via.placeholder.com/300',
+        image: 'https://i.postimg.cc/3Rycht2T/IMG-20240624-WA0010.webp',
       },
       {
         id: 1,
         name: 'Product 1',
-        image: 'https://via.placeholder.com/300',
+        image: 'https://i.postimg.cc/cHV5Lfc8/IMG-20240624-WA0011.webp',
       },
       {
         id: 2,
         name: 'Product 2',
-        image: 'https://via.placeholder.com/300',
+        image: 'https://i.postimg.cc/MHV3MXs3/IMG-20240624-WA0012.webp',
       },
       {
         id: 3,
         name: 'Product 3',
-        image: 'https://via.placeholder.com/300',
+        image: 'https://i.postimg.cc/05wBHH8G/IMG-20240624-WA0013.webp',
       },
       {
         id: 4,
         name: 'Product 4',
-        image: 'https://via.placeholder.com/300',
+        image: 'https://i.postimg.cc/7ZmsTFV4/IMG-20240624-WA0014.webp',
+      },
+      {
+        id: 3,
+        name: 'Product 3',
+        image: 'https://i.postimg.cc/PrbFdpvP/IMG-20240624-WA0015.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/9FHn3tM6/IMG-20240624-WA0016.webp',
+      },
+      {
+        id: 3,
+        name: 'Product 3',
+        image: 'https://i.postimg.cc/9QWg0my1/IMG-20240624-WA0017.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/9f0xPL87/IMG-20240624-WA0018.webp',
+      },
+      {
+        id: 3,
+        name: 'Product 3',
+        image: 'https://i.postimg.cc/zfQxxT6P/IMG-20240624-WA0019.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/rsXQkM81/IMG-20240624-WA0020.webp',
+      },
+      {
+        id: 3,
+        name: 'Product 3',
+        image: 'https://i.postimg.cc/C1fmXzVM/IMG-20240624-WA0021.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/7P0KNGVm/IMG-20240624-WA0022.webp',
+      },
+      {
+        id: 3,
+        name: 'Product 3',
+        image: 'https://i.postimg.cc/yxmn6tdw/IMG-20240624-WA0023.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/9Q8bfGmF/IMG-20240624-WA0024.webp',
+      },
+      {
+        id: 3,
+        name: 'Product 3',
+        image: 'https://i.postimg.cc/65KYbWbw/IMG-20240624-WA0025.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/dt9nzbgC/IMG-20240624-WA0026.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/L86vRyMb/IMG-20240624-WA0027.webp ',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/k52cRBGN/IMG-20240624-WA0028.webp ',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: ' https://i.postimg.cc/Xvtgf4BR/IMG-20240624-WA0029.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: ' https://i.postimg.cc/PxZQK9mP/IMG-20240624-WA0030.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/kGmFHscw/IMG-20240624-WA0031.webp ',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/c4dBMD6L/IMG-20240624-WA0032.webp ',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: ' https://i.postimg.cc/kMQySrJH/IMG-20240624-WA0033.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: ' https://i.postimg.cc/qMQXm8CX/IMG-20240624-WA0034.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/zvFSYh2N/IMG-20240624-WA0035.webp ',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: ' https://i.postimg.cc/MpT0gv7k/IMG-20240624-WA0036.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/fRr7sDCV/IMG-20240624-WA0037.webp ',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/bvSxNWV3/IMG-20240624-WA0038.webp ',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/858hF4qD/IMG-20240624-WA0039.webp ',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/Qtpcc537/IMG-20240624-WA0040.webp',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/T10m46hY/IMG-20240624-WA0041.webp ',
+      },
+      {
+        id: 4,
+        name: 'Product 4',
+        image: 'https://i.postimg.cc/d3wr61sx/IMG-20240624-WA0042.webp ',
       },
   ];
 
