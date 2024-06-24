@@ -8,7 +8,7 @@ const Footer = () => {
             {/* Background overlay */}
             <div className="absolute inset-0">
                 <img 
-                    src="https://i.postimg.cc/SQ82jpBC/greg-rosenke-GOWz0z-Tf-v-Y-unsplash-1.jpg" 
+                    src="https://i.postimg.cc/Hk3Vk0qP/greg-rosenke-GOWz0zTf_vY-unsplash_(1).webp" 
                     alt="Background" 
                     className="w-full h-full object-cover opacity-30" 
                 />
