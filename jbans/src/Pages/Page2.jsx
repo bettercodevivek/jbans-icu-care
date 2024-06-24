@@ -135,13 +135,16 @@ export default function Page2() {
             GLUCONIT
           </h1>
           <p className="text-white leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-            atque eum eius corporis eaque sint odit reprehenderit debitis ex,
-            unde porro praesentium dolorum nostrum cum laborum possimus
-            consequatur voluptatum saepe. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Laboriosam atque eum eius corporis
-            eaque sint odit reprehenderit debitis ex, unde porro praesentium
-            dolorum nostrum cum laborum possimus consequatur voluptatum saepe.
+          <p className="mb-6">
+        Gluconit Injection is a combination of Calcium Gluconate and Calcium Lactobionate, available in 10 ml doses. It is commonly used for the diagnosis or treatment of low blood calcium levels.
+      </p>
+      <h2 className="text-2xl font-bold mb-4">Side Effects</h2>
+      <ul className="list-disc pl-6">
+        <li className="mb-2">Tooth discoloration</li>
+        <li className="mb-2">Higher doses can weaken bones and ligaments</li>
+        <li className="mb-2">Muscle weakness</li>
+        <li className="mb-2">Nervous system problems</li>
+      </ul>
           </p>
         </div>
       </div>
