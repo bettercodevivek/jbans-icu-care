@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from 'react-router-dom';
-import { FiHome, FiUser, FiEye, FiBox, FiMail, FiCheck } from 'react-icons/fi'; // Adding icons
+import { FiHome, FiEye, FiBox, FiMail, FiCheck } from 'react-icons/fi'; 
 
 export default function Navbar() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -37,7 +37,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-blue-500" : ""} hover:bg-gray-50 hover:text-blue-400`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-red-600 bg-white" : ""} hover:bg-gray-50 hover:text-red-600`
                                     }
                                 >
                                     Home
@@ -46,7 +46,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/about'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-blue-500" : ""} hover:bg-gray-50 hover:text-blue-400`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-red-600 bg-white" : ""} hover:bg-gray-50 hover:text-red-600`
                                     }
                                 >
                                     About Us
@@ -56,7 +56,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/quality'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-blue-500" : ""} hover:bg-gray-50 hover:text-blue-400`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-red-600 bg-white" : ""} hover:bg-gray-50 hover:text-red-600`
                                     }
                                 >
                                     Quality and R&D
@@ -66,7 +66,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/products'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-blue-500" : ""} hover:bg-gray-50 hover:text-blue-400`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-red-600 bg-white" : ""} hover:bg-gray-50 hover:text-red-600`
                                     }
                                 >
                                     Our Products
@@ -75,7 +75,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/contact'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-blue-500" : ""} hover:bg-gray-50 hover:text-blue-400`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-red-600 bg-white" : ""} hover:bg-gray-50 hover:text-red-600`
                                     }
                                 >
                                     Contact Us

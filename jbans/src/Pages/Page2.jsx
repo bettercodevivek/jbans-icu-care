@@ -25,14 +25,22 @@ export default function Page2() {
             SODA-Q 25/ SODA-Q 100
           </h1>
           <p className="text-white leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-            atque eum eius corporis eaque sint odit reprehenderit debitis ex,
-            unde porro praesentium dolorum nostrum cum laborum possimus
-            consequatur voluptatum saepe. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Laboriosam atque eum eius corporis
-            eaque sint odit reprehenderit debitis ex, unde porro praesentium
-            dolorum nostrum cum laborum possimus consequatur voluptatum saepe.
-          </p>
+  <strong>Product:</strong> SODA-Q (Sodium bicarbonate Tr 8.4%)<br/><br/>
+  
+  <strong>Form:</strong>
+  <ul>
+    <li>Available as immol/ml in 10 ml, 25 ml ampoules, and 100 ml vials.</li>
+    <li>Each ampoule contains 25 mmol of sodium bicarbonate 8.4%.</li>
+  </ul>
+  
+  <strong>Dosage:</strong>
+  <ul>
+    <li>25 to 50 mL of an 8.4% solution may be given by slow IV injection followed by infusion of diluted solution, if needed.</li>
+    <li>The full dose may also be given by IV infusion of the diluted solution.</li>
+    <li>50 to 100 mL of an 8.4% solution may be given by slow IV injection or infusion of diluted solution.</li>
+  </ul>
+</p>
+
         </div>
       </div>
 
@@ -55,14 +63,22 @@ export default function Page2() {
             J-BANS LBU
           </h1>
           <p className="text-white leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-            atque eum eius corporis eaque sint odit reprehenderit debitis ex,
-            unde porro praesentium dolorum nostrum cum laborum possimus
-            consequatur voluptatum saepe. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Laboriosam atque eum eius corporis
-            eaque sint odit reprehenderit debitis ex, unde porro praesentium
-            dolorum nostrum cum laborum possimus consequatur voluptatum saepe.
-          </p>
+  <strong>Albumin Human:</strong> A purified form of human serum albumin used for various medical purposes.<br/><br/>
+
+  <strong>Uses:</strong>
+  <ul>
+    <li>To replace lost albumin in patients with hypoalbuminemia</li>
+    <li>To treat hypovolemia</li>
+    <li>To treat ascites</li>
+    <li>As a component in some diagnostic imaging kits</li>
+  </ul>
+
+  <strong>Primary Protein:</strong>
+  <ul>
+    <li>Human serum albumin is the main protein found in human blood plasma.</li>
+  </ul>
+</p>
+
         </div>
       </div>
 
@@ -85,14 +101,18 @@ export default function Page2() {
             AGGRABAN
           </h1>
           <p className="text-white leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
-            atque eum eius corporis eaque sint odit reprehenderit debitis ex,
-            unde porro praesentium dolorum nostrum cum laborum possimus
-            consequatur voluptatum saepe. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Laboriosam atque eum eius corporis
-            eaque sint odit reprehenderit debitis ex, unde porro praesentium
-            dolorum nostrum cum laborum possimus consequatur voluptatum saepe.
-          </p>
+  <strong>Usage:</strong>
+  <ul>
+    <li>To assist blood flow to the heart</li>
+    <li>To manage chest pain</li>
+    <li>To manage heart attack</li>
+    <li>In patients whose heart vessels are dilated with a balloon during percutaneous coronary intervention</li>
+    <ul>
+      <li>A procedure where a small tube or stent is implanted to improve blood flow to the heart</li>
+    </ul>
+  </ul>
+</p>
+
         </div>
       </div>
 
