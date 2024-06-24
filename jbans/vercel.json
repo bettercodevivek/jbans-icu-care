@@ -2,12 +2,12 @@
 {
     "builds": [
       {
-        "src": "src/**/*",
+        "src": "package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "build"
+          "distDir": "dist"
         }
       }
     ],
-    "routes": [{ "src": "/[^.]+", "dest": "/inde.html", "status": 200 }]
+    "routes": [{ "src": "/[^.]+", "dest": "/index.html", "status": 200 }]
   }
