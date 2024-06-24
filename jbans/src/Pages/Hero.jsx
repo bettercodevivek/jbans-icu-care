@@ -50,7 +50,7 @@ const Hero = () => {
             className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
           >
             <img src={image} alt={`Slide ${index}`} className="w-full h-full object-cover rounded-3xl" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-10 rounded-3xl text-white px-4 md:px-8">
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 rounded-3xl text-white px-4 md:px-8">
               <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-center font-semibold mb-4">{slidesContent[index].title}</h1>
               <p className="text-sm md:text-base lg:text-lg xl:text-xl text-center mb-4 px-2">{slidesContent[index].description}</p>
               <Link to={slidesContent[index].link} className="bg-red-600 text-white font-bold py-2 mb-6 px-4 rounded hover:bg-red-700 transition-colors duration-300">
@@ -62,20 +62,20 @@ const Hero = () => {
       </div>
 
       {/* Statistics */}
-      <div className="relative bottom-12 bg-inherit bg-opacity-80 backdrop-blur-lg shadow-lg rounded-3xl border-2 w-full max-w-4xl mx-4 md:mx-auto p-4 md:p-8 grid grid-cols-3 md:grid-cols-5 gap-4 text-center">
+      <div className="relative bottom-12 text-zinc-300 bg-inherit bg-opacity-80 backdrop-blur-lg shadow-lg rounded-3xl border-2 w-full max-w-4xl mx-4 md:mx-auto p-4 md:p-8 grid grid-cols-3 md:grid-cols-5 gap-4 text-center">
         <div className="flex flex-col items-center">
-          <span className="font-bold text-lg  md:text-2xl lg:text-3xl"><CountUp end={7} delay={3} />+</span>
+          <span className="font-bold text-lg   md:text-2xl lg:text-3xl"><CountUp end={7} delay={3} />+</span>
           <span className="text-xs md:text-sm lg:text-base">Years of Experience</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={165000} delay={3} />+</span>
+          <span className="font-bold text-lg  md:text-2xl lg:text-3xl"><CountUp end={165000} delay={3} />+</span>
           <span className="text-xs md:text-sm lg:text-base">Active Clients</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={450} delay={3} />+</span>
+          <span className="font-bold text-lg  md:text-2xl lg:text-3xl"><CountUp end={450} delay={3} />+</span>
           <span className="text-xs md:text-sm lg:text-base">Employees</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col  items-center">
           <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={10} delay={3} />+</span>
           <span className="text-xs md:text-sm lg:text-base">Corporate Clients</span>
         </div>
