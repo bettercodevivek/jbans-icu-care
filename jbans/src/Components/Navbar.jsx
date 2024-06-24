@@ -73,6 +73,15 @@ export default function Navbar() {
                                 </NavLink>
                             </li>
                             <li>
+                                <NavLink to='/gallery'
+                                    className={({ isActive }) =>
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-red-600 bg-white" : ""} hover:bg-gray-50 hover:text-red-600`
+                                    }
+                                >
+                                Gallery
+                                </NavLink>
+                            </li>
+                            <li>
                                 <NavLink to='/contact'
                                     className={({ isActive }) =>
                                         `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-red-600 bg-white" : ""} hover:bg-gray-50 hover:text-red-600`

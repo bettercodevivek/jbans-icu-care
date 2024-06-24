@@ -8,6 +8,7 @@ import About from './Components/About'
 import Products from './Components/Products'
 import Contact from './Components/Contact.jsx'
 import Quality from './Components/Quality.jsx'
+import Gallery from './Components/Gallery.jsx'
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
     {
       path:'contact',
       element:<Contact/>
+    },
+    {
+      path:'gallery',
+      element:<Gallery/>
     }
 ]
 }
