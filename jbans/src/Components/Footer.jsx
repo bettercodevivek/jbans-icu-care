@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaArrowUp ,FaInstagram,FaFacebook,FaYoutube } from 'react-icons/fa';
+import { FaArrowUp, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -38,8 +38,18 @@ const Footer = () => {
                         <Link to="/contact" className="transition hover:text-red-600">Contact Us</Link>
                     </nav>
                 </div>
+                  {/* Address Section */}
+                  <div className="flex text-black flex-col gap-4 lg:w-1/4">
+                    <h3 className="text-md font-semibold text-center mb-2">Address</h3>
+                    <div className="text-center shadow-lg backdrop-blur-lg text-sm rounded-lg p-2">
+                        Reg. Office: U 178 A, Near SBI Shakarpur Vikas Marg East Delhi-110092 
+                    </div>
+                    <div className="text-center text-sm shadow-lg backdrop-blur-lg rounded-lg p-2">
+                        Corp. Office: 341, Vardhman Sunrize Plaza, LSC Plot No.1 Vasundra Enclave,Kondli, New delhi-110096
+                    </div>
+                </div>
                 {/* Developer credits */}
-                <div className="flex flex-col lg:w-1/4">
+                <div className="flex flex-col sm-ml-8 md:ml-8 lg:ml-8 lg:w-1/4">
                     <h3 className="text-md font-semibold text-center mb-2">Designed and Developed by</h3>
                     <a 
                         href="https://www.linkedin.com/in/vivek-singh-77849329a/" target='_blank'
@@ -52,7 +62,7 @@ const Footer = () => {
                 <div className="flex flex-col lg:w-1/4 items-center">
                     <button
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded-full shadow-lg transition transform hover:scale-105"
+                        className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white py-2 px-3 rounded-full shadow-lg transition transform hover:scale-105"
                     >
                         <FaArrowUp />
                         <span className="text-sm">Back to Top</span>

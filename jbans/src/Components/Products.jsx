@@ -22,6 +22,11 @@ const Products = () => {
       image: 'https://i.postimg.cc/BZrdSfhw/IMG-20240619-WA0005.webp',
     },
     {
+      id: 7,
+      name: 'MINOBAN',
+      image: 'https://i.postimg.cc/1z7jbknB/IMG-20240624-WA0009.webp',
+    },
+    {
       id: 2,
       name: 'ORNIBAN',
       image: 'https://i.postimg.cc/907KdLfp/IMG-20240624-WA0004.webp',
@@ -47,14 +52,24 @@ const Products = () => {
       image: 'https://i.postimg.cc/W41yWN3t/IMG-20240624-WA0008.webp',
     },
     {
-      id: 7,
-      name: 'MINOBAN',
-      image: 'https://i.postimg.cc/1z7jbknB/IMG-20240624-WA0009.webp',
-    },
-    {
       id: 8,
       name: 'J-PRED-500',
       image: 'https://i.postimg.cc/3Rycht2T/IMG-20240624-WA0010.webp',
+    },
+    {
+      id: 14,
+      name: 'J-PRED-40',
+      image: 'https://i.postimg.cc/9FHn3tM6/IMG-20240624-WA0016.webp',
+    },
+    {
+      id: 15,
+      name: 'J-PRED-125',
+      image: 'https://i.postimg.cc/9QWg0my1/IMG-20240624-WA0017.webp',
+    },
+    {
+      id: 17,
+      name: 'J-PRED-1000',
+      image: 'https://i.postimg.cc/zfQxxT6P/IMG-20240624-WA0019.webp',
     },
     {
       id: 9,
@@ -82,24 +97,9 @@ const Products = () => {
       image: 'https://i.postimg.cc/PrbFdpvP/IMG-20240624-WA0015.webp',
     },
     {
-      id: 14,
-      name: 'J-PRED-40',
-      image: 'https://i.postimg.cc/9FHn3tM6/IMG-20240624-WA0016.webp',
-    },
-    {
-      id: 15,
-      name: 'J-PRED-125',
-      image: 'https://i.postimg.cc/9QWg0my1/IMG-20240624-WA0017.webp',
-    },
-    {
       id: 16,
       name: 'AXAMIK-T',
       image: 'https://i.postimg.cc/9f0xPL87/IMG-20240624-WA0018.webp',
-    },
-    {
-      id: 17,
-      name: 'J-PRED-1000',
-      image: 'https://i.postimg.cc/zfQxxT6P/IMG-20240624-WA0019.webp',
     },
     {
       id: 18,
@@ -117,13 +117,8 @@ const Products = () => {
       image: 'https://i.postimg.cc/7P0KNGVm/IMG-20240624-WA0022.webp',
     },
     {
-      id: 21,
-      name: 'Acetylcysteine Injection',
-      image: 'https://i.postimg.cc/yxmn6tdw/IMG-20240624-WA0023.webp',
-    },
-    {
       id: 22,
-      name: 'Potassium Chloride Injection',
+      name: 'POTCIBAN',
       image: 'https://i.postimg.cc/9Q8bfGmF/IMG-20240624-WA0024.webp',
     },
     {
@@ -187,11 +182,6 @@ const Products = () => {
       image: 'https://i.postimg.cc/MpT0gv7k/IMG-20240624-WA0036.webp',
     },
     {
-      id: 35,
-      name: 'CLINDABAN',
-      image: 'https://i.postimg.cc/fRr7sDCV/IMG-20240624-WA0037.webp',
-    },
-    {
       id: 36,
       name: 'JEPSOLIN',
       image: 'https://i.postimg.cc/bvSxNWV3/IMG-20240624-WA0038.webp',
@@ -205,6 +195,11 @@ const Products = () => {
       id: 38,
       name: 'CLINDABAN 600',
       image: 'https://i.postimg.cc/Qtpcc537/IMG-20240624-WA0040.webp',
+    },
+    {
+      id: 35,
+      name: 'CLINDABAN',
+      image: 'https://i.postimg.cc/fRr7sDCV/IMG-20240624-WA0037.webp',
     },
     {
       id: 39,
@@ -223,6 +218,9 @@ const Products = () => {
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-center pb-12 text-red-600">
         Our Range of Products
       </h1>
+      <h2 className="text-md sm:text-2xl md:text-2xl lg:text-2xl  text-center pb-12 text-black">
+        Click on the product image to view it 
+      </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map(product => (
           <div
