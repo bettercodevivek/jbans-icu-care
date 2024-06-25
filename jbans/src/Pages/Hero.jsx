@@ -31,7 +31,7 @@ const Hero = () => {
     },
     {
       title: "Our Segments",
-      description: "  The major segments that we cater to are Nephrology, Neurological Disorders, Critical Care, Gynaecology, Ortho, Gastroenterology, Urology, Respiratory and Cardio Metabolic. As a young age corporate, we believe in an active and growing culture that has helped us put the company at such high pedestal in short amount of time. We retain a specialty marketing process in the Indian pharma industry through our structure of customer-dedicated marketing teams and comprehensive product portfolios.",
+      description: "  The major segments that we cater to are Nephrology, Neurological Disorders, Critical Care, Gynaecology, Ortho, Gastroenterology, Urology, Respiratory and Cardio Metabolic.",
       buttonText: "Check our Products",
       link: "/products",
     },
