@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from 'react-modal';
+
+// Ensure accessibility for the modal
+Modal.setAppElement('#root');
 
 const Products = () => {
-  // Example data for products
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const openModal = (product) => {
+    setSelectedProduct(product);
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+  };
+
   const products = [
     {
       id: 1,
@@ -212,7 +225,11 @@ const Products = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map(product => (
-          <div key={product.id} className="bg-white shadow-md rounded-lg overflow-hidden">
+          <div
+            key={product.id}
+            className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
+            onClick={() => openModal(product)}
+          >
             <img
               src={product.image}
               alt={product.name}
@@ -224,6 +241,28 @@ const Products = () => {
           </div>
         ))}
       </div>
+
+      {selectedProduct && (
+        <Modal
+          isOpen={!!selectedProduct}
+          onRequestClose={closeModal}
+          className="relative mx-auto w-full max-w-lg p-6 bg-white rounded-lg shadow-lg"
+          overlayClassName="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center"
+        >
+          <img
+            src={selectedProduct.image}
+            alt={selectedProduct.name}
+            className="w-full h-auto mb-4"
+          />
+          <h2 className="text-2xl font-bold mb-2 text-center">{selectedProduct.name}</h2>
+          <button
+            onClick={closeModal}
+            className="mt-4 py-2 px-4 bg-red-600 text-white rounded hover:bg-red-700 mx-auto block"
+          >
+            Close
+          </button>
+        </Modal>
+      )}
     </div>
   );
 };

@@ -50,7 +50,7 @@ const Quality = () => {
             <div className="md:w-1/2">
               <img
                 className="w-full rounded-lg shadow-lg"
-                src="https://i.postimg.cc/52sQhCLB/ant-rozetsky-SLIFI67jv5k-unsplash.webp"
+                src="https://i.postimg.cc/1zWfFLyh/pharmaceutical-technicians-work-sterile-working-conditions-pharmaceutical-factory-scientists-wearing.webp"
                 alt="Research & Development"
               />
             </div>
