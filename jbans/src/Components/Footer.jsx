@@ -24,7 +24,7 @@ const Footer = () => {
                             className="h-20 w-36" 
                         />
                     </a>
-                    <h2 className="text-lg lg:text-xl font-bold mb-1">J-BANS ICU CARE</h2>
+                    <h2 className="text-lg lg:text-xl font-bold mb-1">J-BANS ICU CARE PVT. LTD.</h2>
                     <p className="text-sm lg:text-md text-black">QUALITY WITH INNOVATION</p>
                 </div>
                 {/* Quick links */}
@@ -72,7 +72,7 @@ const Footer = () => {
            
             {/* Copyright */}
             <div className="text-center mt-4 text-sm">
-                <p>&copy; {new Date().getFullYear()} J-BANS ICU CARE. All Rights Reserved.</p>
+                <p>&copy; {new Date().getFullYear()} J-BANS ICU CARE PVT.LTD. All Rights Reserved.</p>
             </div>
         </footer>
     );
