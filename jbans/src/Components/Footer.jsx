@@ -38,21 +38,44 @@ const Footer = () => {
                         <Link to="/contact" className="transition hover:text-red-600">Contact Us</Link>
                     </nav>
                 </div>
-                  {/* Address Section */}
-                  <div className="flex text-black flex-col gap-4 lg:w-1/4">
-                    <h3 className="text-md font-semibold text-center mb-2">Address</h3>
-                    <div className="text-center shadow-lg backdrop-blur-lg text-sm rounded-lg p-2">
+                {/* Address Section */}
+                <div className="flex flex-col lg:w-1/4 text-center">
+                    <h3 className="text-md font-semibold mb-2">Address</h3>
+                    <div className="shadow-lg backdrop-blur-lg text-sm rounded-lg p-2 mb-2">
                         Reg. Office: U 178 A, Near SBI Shakarpur Vikas Marg East Delhi-110092 
                     </div>
-                    <div className="text-center text-sm shadow-lg backdrop-blur-lg rounded-lg p-2">
-                        Corp. Office: 341, Vardhman Sunrize Plaza, LSC Plot No.1 Vasundra Enclave,Kondli, New delhi-110096
+                    <div className="text-sm shadow-lg backdrop-blur-lg rounded-lg p-2">
+                        Corp. Office: 341, Vardhman Sunrize Plaza, LSC Plot No.1 Vasundra Enclave, Kondli, New Delhi-110096
+                    </div>
+                </div>
+                {/* Mail and Website Section */}
+                <div className="flex flex-col lg:w-1/4 text-center md:mx-4 lg:mx-4">
+                    <h3 className="text-md font-semibold mb-2">Contact Information</h3>
+                    <div className="shadow-lg backdrop-blur-lg text-sm rounded-lg p-2 mb-2">
+                        <a 
+                            href="mailto:info@jbansicucare.com" 
+                            className="text-black hover:text-red-600 transition"
+                        >
+                            info@jbansicucare.com
+                        </a>
+                    </div>
+                    <div className="shadow-lg backdrop-blur-lg text-sm rounded-lg p-2">
+                        <a 
+                            href="https://www.jbansicucare.com" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-black hover:text-red-600 transition"
+                        >
+                            www.jbansicucare.com
+                        </a>
                     </div>
                 </div>
                 {/* Developer credits */}
-                <div className="flex flex-col sm-ml-8 md:ml-8 lg:ml-8 lg:w-1/4">
+                <div className="flex flex-col lg:w-1/4">
                     <h3 className="text-md font-semibold text-center mb-2">Designed and Developed by</h3>
                     <a 
-                        href="https://www.linkedin.com/in/vivek-singh-77849329a/" target='_blank'
+                        href="https://www.linkedin.com/in/vivek-singh-77849329a/" 
+                        target='_blank'
                         className="text-black bg-inherit backdrop-blur-xl rounded-full drop-shadow-lg p-4 transition hover:text-red-600 text-center text-sm"
                     >
                         BetterCodeVivek
@@ -69,7 +92,6 @@ const Footer = () => {
                     </button>
                 </div>
             </div>
-           
             {/* Copyright */}
             <div className="text-center mt-4 text-sm">
                 <p>&copy; {new Date().getFullYear()} J-BANS ICU CARE PVT.LTD. All Rights Reserved.</p>
