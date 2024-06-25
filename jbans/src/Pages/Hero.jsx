@@ -7,6 +7,7 @@ const Hero = () => {
     'https://i.postimg.cc/VkQcTRFb/noah-buscher-x8-ZStuk-S2-PM-unsplash.webp',
     'https://i.postimg.cc/K8PMCZ67/img27.webp',
     'https://i.postimg.cc/Hk3Vk0qP/greg-rosenke-GOWz0zTf_vY-unsplash_(1).webp',
+    'https://i.postimg.cc/BQcKCyvw/marcelo-leal-taF3klwwAWA-unsplash.webp'
   ];
 
   const slidesContent = [
@@ -28,6 +29,12 @@ const Hero = () => {
       buttonText: "Check our Products",
       link: "/products",
     },
+    {
+      title: "Our Focus",
+      description: "J-BANS  has always had a focus on chronic disease management. Critical care was yet another such venture for J-BANS . We have been serving ICUs, CCus and Trauma centers across India with ourgamut of high quality Anti-infective.",
+      buttonText: "Check our Products",
+      link: "/products",
+    },
   ];
 
   const [currentIndex, setIndex] = useState(0);
@@ -35,7 +42,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % ImageSlide.length);
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
