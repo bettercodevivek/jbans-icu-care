@@ -213,6 +213,79 @@ const Products = () => {
     },
   ];
 
+  const products1=[
+    {
+      id: 41,
+      name: 'FAROBIN-ER 300',
+      image: 'https://i.postimg.cc/yxPxz25Q/IMG-20240625-WA0011.webp',
+    },
+    {
+      id: 42,
+      name: 'ACECLOBIN-SP',
+      image: 'https://i.postimg.cc/fTzkvTt6/IMG-20240625-WA0012.webp',
+    },
+    {
+      id: 43,
+      name: 'CALZIN-CT',
+      image: 'https://i.postimg.cc/Dyx0pk1m/IMG-20240625-WA0013.webp',
+    },
+    {
+      id: 44,
+      name: 'UDOBIN',
+      image: 'https://i.postimg.cc/59q6vF0B/IMG-20240625-WA0014.webp',
+    },
+    {
+      id: 45,
+      name: 'CEFROBIN-500',
+      image: 'https://i.postimg.cc/NjLMWJxD/IMG-20240625-WA0015.webp',
+    },
+    {
+      id: 46,
+      name: 'COCIT-P',
+      image: 'https://i.postimg.cc/P5cxhW3j/IMG-20240625-WA0016.webp',
+    },
+    {
+      id: 47,
+      name: 'RIFABIN-400',
+      image: 'https://i.postimg.cc/s2h22MqZ/IMG-20240625-WA0017.webp',
+    },
+    {
+      id: 48,
+      name: 'MULTIBIN-9G',
+      image: 'https://i.postimg.cc/bJfwSzfV/IMG-20240626-WA0000.webp',
+    },
+    {
+      id: 49,
+      name: 'SUCRALFIT-O',
+      image: 'https://i.postimg.cc/wM6xF0vh/IMG-20240626-WA0002.webp',
+    },
+    {
+      id: 50,
+      name: 'LYCOBIN SYRUP',
+      image: 'https://i.postimg.cc/tJ2qcWZ8/IMG-20240626-WA0003.webp',
+    },
+    {
+      id: 51,
+      name: 'CLINDABAN-300',
+      image: 'https://i.postimg.cc/kMcgD31w/IMG-20240626-WA0004.webp',
+    },
+    {
+      id: 52,
+      name: 'LACTUBIN ',
+      image: 'https://i.postimg.cc/RVZVHs2m/IMG-20240626-WA0006.webp',
+    },
+    {
+      id: 53,
+      name: 'TRYZYME',
+      image: 'https://i.postimg.cc/qRcM89kJ/IMG-20240626-WA0001.webp',
+    },
+    {
+      id: 54,
+      name: 'BROFEK',
+      image: 'https://i.postimg.cc/Kvpcr7yM/IMG-20240626-WA0005.webp',
+    },
+  ];
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-center pb-12 text-red-600">
@@ -221,8 +294,28 @@ const Products = () => {
       <h2 className="text-md sm:text-2xl md:text-2xl lg:text-2xl  text-center pb-12 text-black">
         Click on the product image to view it 
       </h2>
+      <h1 className='text-xl font-semibold sm:text-3xl md:text-3xl lg:text-3xl  text-center pb-4 text-black'>Critical Care Range</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map(product => (
+          <div
+            key={product.id}
+            className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
+            onClick={() => openModal(product)}
+          >
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-40 sm:h-48 object-cover"
+            />
+            <div className="p-4">
+              <p className="text-gray-900 font-bold text-xl mb-2">{product.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      <h1 className='text-xl sm:text-3xl font-semibold md:text-3xl lg:text-3xl  text-center pb-4 pt-4 text-black'>Tablets and Syrups Range</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {products1.map(product => (
           <div
             key={product.id}
             className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
