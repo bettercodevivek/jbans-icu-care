@@ -75,8 +75,8 @@ const Hero = () => {
           <span className="text-xs md:text-sm lg:text-base">Years of Experience</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="font-bold text-lg  md:text-2xl lg:text-3xl"><CountUp end={165000} delay={3} />+</span>
-          <span className="text-xs md:text-sm lg:text-base">Active Clients</span>
+          <span className="font-bold text-lg  md:text-2xl lg:text-3xl"><CountUp end={65000} delay={3} />+</span>
+          <span className="text-xs md:text-sm lg:text-base">Active Customers</span>
         </div>
         <div className="flex flex-col items-center">
           <span className="font-bold text-lg  md:text-2xl lg:text-3xl"><CountUp end={450} delay={3} />+</span>
@@ -84,7 +84,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-col  items-center">
           <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={10} delay={3} />+</span>
-          <span className="text-xs md:text-sm lg:text-base">Corporate Clients</span>
+          <span className="text-xs md:text-sm lg:text-base">Corporate Customers</span>
         </div>
         <div className="flex flex-col items-center">
           <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={150} delay={3} />+</span>
