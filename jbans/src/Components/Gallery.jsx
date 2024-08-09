@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 const Gallery = () => {
   // Array of image URLs
   const [images, setImages] = useState([
-    'https://i.postimg.cc/pLB90ptz/IMG-20240619-WA0004.webp',
-    'https://i.postimg.cc/MGPnSNHG/IMG-20240619-WA0003.webp',
-    'https://i.postimg.cc/PqrC0Ttc/IMG-20240619-WA0006.webp',
-    'https://i.postimg.cc/rmDKFjRN/IMG-20240619-WA0009-2.webp',
+    '/IMG-20240619-WA0004.webp',
+    '/IMG-20240619-WA0003.webp',
+    '/IMG-20240619-WA0006.webp',
+    '/IMG-20240619-WA0009 (2).webp',
     // Add more images here
   ]);
 
