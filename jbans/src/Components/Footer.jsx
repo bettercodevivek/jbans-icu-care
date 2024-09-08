@@ -74,11 +74,11 @@ const Footer = () => {
                 <div className="flex flex-col lg:w-1/4">
                     <h3 className="text-md font-semibold text-center mb-2">Designed and Developed by</h3>
                     <a 
-                        href="https://www.linkedin.com/in/vivek-singh-77849329a/" 
+                        href="https://www.vevywebsolutions.online/" 
                         target='_blank'
                         className="text-black bg-inherit backdrop-blur-xl rounded-full drop-shadow-lg p-4 transition hover:text-red-600 text-center text-sm"
                     >
-                        BetterCodeVivek
+                        Vevy Web Solutions
                     </a>
                 </div>
                 {/* Back to top button */}
