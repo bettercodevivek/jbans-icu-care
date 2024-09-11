@@ -50,7 +50,7 @@ const Hero = () => {
   return (
     <div className="relative flex flex-col items-center justify-center">
       {/* Slideshow */}
-      <div className="relative w-11/12 max-w-screen-lg h-80 md:min-h-screen lg:min-h-screen xl:min-h-screen mx-4 md:mx-auto mt-8 rounded-3xl overflow-hidden">
+      <div className="relative w-11/12 max-w-screen-2xl h-80 md:min-h-screen lg:min-h-screen xl:min-h-screen mx-4 md:mx-auto mt-8 rounded-3xl overflow-hidden">
         {ImageSlide.map((image, index) => (
           <div
             key={index}
@@ -69,7 +69,7 @@ const Hero = () => {
       </div>
 
       {/* Statistics */}
-      <div className="relative bottom-12 text-black bg-white bg-opacity-80 backdrop-blur-lg shadow-lg rounded-3xl border-2 w-5/6 max-w-4xl mx-4 md:mx-auto p-4 md:p-8 grid grid-cols-3 md:grid-cols-5 gap-4 text-center">
+      <div className="relative bottom-12 text-black bg-white bg-opacity-80 backdrop-blur-lg shadow-lg rounded-3xl border-2 w-5/6 max-w-screen-lg mx-4 md:mx-auto p-4 md:p-8 grid grid-cols-3 md:grid-cols-5 gap-4 text-center">
         <div className="flex flex-col items-center">
           <span className="font-bold text-lg   md:text-2xl lg:text-3xl"><CountUp end={7} delay={3} />+</span>
           <span className="text-xs md:text-sm lg:text-base">Years of Experience</span>
