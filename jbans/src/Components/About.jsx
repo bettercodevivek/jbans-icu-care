@@ -38,34 +38,79 @@ const About = () => {
           </div>
         </section>
 
-        {/* Vision card */}
-        <section className="mt-16">
+        <section className="mt-10">
   <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-2">
 
     {/* Card 2 - J BANS' Vision */}
-    <div className="bg-white rounded-lg shadow-lg p-8">
-      <h2 className="text-4xl font-semibold text-center text-gray-900 mb-6">J BANS' Vision</h2>
-      <ul className="list-disc list-inside text-lg md:text-xl text-gray-700 leading-relaxed">
-        <li>J BANS' vision is to invest in formulation, production, technology, and process development in a way that it delivers results which are par excellence.</li>
-        <li>We believe in providing efficient and safe drugs to improve patients' health worldwide.</li>
-        <li>J BANS develops quality injectable and infusions for regulated and semi-regulated markets.</li>
-        <li>We aim to bring out the best quality drugs by using technological expertise based on Sterile and Aseptic techniques, which are backed up with the science of Targeted Delivery Systems.</li>
-      </ul>
+    <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+      <h2 className="text-3xl md:text-4xl font-semibold text-center text-gray-900 mb-4 md:mb-6">J BANS' Vision</h2>
+      
+      {/* Vision List as Individual Cards */}
+      <div className="space-y-4">
+        <div className="bg-gray-100 rounded-md shadow p-4 flex">
+          <span className="text-red-600 mr-3">•</span>
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            J BANS' vision is to invest in formulation, production, technology, and process development in a way that it delivers results which are par excellence.
+          </p>
+        </div>
+        <div className="bg-gray-100 rounded-md shadow p-4 flex">
+          <span className="text-red-600 mr-3">•</span>
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            We believe in providing efficient and safe drugs to improve patients' health worldwide.
+          </p>
+        </div>
+        <div className="bg-gray-100 rounded-md shadow p-4 flex">
+          <span className="text-red-600 mr-3">•</span>
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            J BANS develops quality injectable and infusions for regulated and semi-regulated markets.
+          </p>
+        </div>
+        <div className="bg-gray-100 rounded-md shadow p-4 flex">
+          <span className="text-red-600 mr-3">•</span>
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            We aim to bring out the best quality drugs by using technological expertise based on Sterile and Aseptic techniques, which are backed up with the science of Targeted Delivery Systems.
+          </p>
+        </div>
+      </div>
     </div>
 
     {/* Card 3 - About Us */}
-    <div className="bg-white rounded-lg shadow-lg p-8">
-      <h2 className="text-4xl font-semibold text-center text-gray-900 mb-6">Who We Are</h2>
-      <ul className="list-disc list-inside text-lg md:text-xl text-gray-700 leading-relaxed">
-        <li>J BANS is a privately-owned healthcare company founded in 2017 and it is a part of J BANS Group of Companies.</li>
-        <li>J BANS Group of Companies is engaged in Healthcare.</li>
-        <li>J BANS ICU CARE PVT LTD has an experienced team with unmatched know-how in development and manufacturing of parenteral products focusing on therapeutics like Analgesics, Critical care, Antiemetics, Anti-infectives, and Cardiac.</li>
-        <li>The company is involved in the complete development of injectables, starting from research & development, scale-up, manufacturing, registration to commercialization until the drug is poised to become a credible market player.</li>
-      </ul>
+    <div className="bg-white rounded-xl shadow-lg p-6 md:p-8">
+      <h2 className="text-3xl md:text-4xl font-semibold text-center text-gray-900 mb-4 md:mb-6">Who We Are</h2>
+      
+      {/* About Us List as Individual Cards */}
+      <div className="space-y-4">
+        <div className="bg-gray-100 rounded-md shadow p-4 flex">
+          <span className="text-red-600 mr-3">•</span>
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            J BANS is a privately-owned healthcare company founded in 2017 and it is a part of J BANS Group of Companies.
+          </p>
+        </div>
+        <div className="bg-gray-100 rounded-md shadow p-4 flex">
+          <span className="text-red-600 mr-3">•</span>
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            J BANS Group of Companies is engaged in Healthcare.
+          </p>
+        </div>
+        <div className="bg-gray-100 rounded-md shadow p-4 flex">
+          <span className="text-red-600 mr-3">•</span>
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            J BANS ICU CARE PVT LTD has an experienced team with unmatched know-how in development and manufacturing of parenteral products focusing on therapeutics like Analgesics, Critical care, Antiemetics, Anti-infectives, and Cardiac.
+          </p>
+        </div>
+        <div className="bg-gray-100 rounded-md shadow p-4 flex">
+          <span className="text-red-600 mr-3">•</span>
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            The company is involved in the complete development of injectables, starting from research & development, scale-up, manufacturing, registration to commercialization until the drug is poised to become a credible market player.
+          </p>
+        </div>
+      </div>
     </div>
 
   </div>
 </section>
+
+
 
       </main>
 
