@@ -7,6 +7,12 @@ const Gallery = () => {
     '/IMG-20240619-WA0003.webp',
     '/IMG-20240619-WA0006.webp',
     '/IMG-20240619-WA0009 (2).webp',
+    'https://i.postimg.cc/Sx50XQ3J/IMG-20250106-WA0010-1.jpg',
+    'https://i.postimg.cc/768pVsx4/IMG-20250106-WA0011.jpg',
+    'https://i.postimg.cc/R0nkw5xG/IMG-20250106-WA0012.jpg',
+    'https://i.postimg.cc/VLKP8WF9/IMG-20250106-WA0013.jpg',
+    'https://i.postimg.cc/JztV4HTf/IMG-20250106-WA0014.jpg',
+    'https://i.postimg.cc/4NfRqSpN/IMG-20250106-WA0015.jpg'
     // Add more images here
   ]);
 
