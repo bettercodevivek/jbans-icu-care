@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import CountUp from 'react-countup';
-import { FaPhoneAlt,FaWhatsapp } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaFileDownload, FaDownload } from "react-icons/fa";
+import { FiTablet } from "react-icons/fi";
 
 const Hero = () => {
   const ImageSlide = [
@@ -48,6 +49,15 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/JBANS-LIST.xlsx'; // Update with actual file path
+    link.download = 'data.xlsx';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="relative flex flex-col items-center justify-center">
       {/* Slideshow */}
@@ -69,39 +79,22 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Statistics */}
-      <div className="relative bottom-12 text-black bg-white bg-opacity-80 backdrop-blur-lg shadow-lg rounded-3xl border-2 w-5/6 max-w-screen-lg mx-4 md:mx-auto p-4 md:p-8 grid grid-cols-3 md:grid-cols-5 gap-4 text-center">
-        <div className="flex flex-col items-center">
-          <span className="font-bold text-lg   md:text-2xl lg:text-3xl"><CountUp end={7} delay={3} />+</span>
-          <span className="text-xs md:text-sm lg:text-base">Years of Experience</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <span className="font-bold text-lg  md:text-2xl lg:text-3xl"><CountUp end={65000} delay={3} />+</span>
-          <span className="text-xs md:text-sm lg:text-base">Active Customers</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <span className="font-bold text-lg  md:text-2xl lg:text-3xl"><CountUp end={450} delay={3} />+</span>
-          <span className="text-xs md:text-sm lg:text-base">Employees</span>
-        </div>
-        <div className="flex flex-col  items-center">
-          <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={10} delay={3} />+</span>
-          <span className="text-xs md:text-sm lg:text-base">Corporate Customers</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <span className="font-bold text-lg md:text-2xl lg:text-3xl"><CountUp end={150} delay={3} />+</span>
-          <span className="text-xs md:text-sm lg:text-base">Products</span>
-        </div>
-      </div>
-       {/* Fixed Contact Icons */}
-       <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
-        <a href="tel:+918527187932" className="bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300">
+      {/* Fixed Contact & Download Icons */}
+      <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
+        <a href="tel:+919876543210" className="bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300">
           <FaPhoneAlt size={24} />
         </a>
-        <a href="https://wa.me/918527187932" className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300">
+        <a href="https://wa.me/919876543210" className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300">
           <FaWhatsapp size={24} />
         </a>
       </div>
-    </div>
+      
+      <div className="fixed top-1/2 -left-12 z-50 transform -translate-y-1/2">
+        <button onClick={handleDownload} className="bg-emerald-600 text-white flex items-center gap-2 px-4 py-2 rotate-90 rounded-t-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300">
+          <FaDownload size={20} /> Injectibles
+        </button>
+      </div>
+          </div>
   );
 };
 
