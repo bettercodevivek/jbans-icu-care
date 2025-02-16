@@ -34,7 +34,7 @@ export default function Contact() {
                 <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4">
                     <a
                         href="mailto:info@jbansicucare.com"
-                        className="px-12 py-4 bg-gradient-to-r from-red-600 to-red-800 rounded-lg shadow-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
+                        className="px-12 py-4 bg-emerald-600 rounded-lg shadow-lg transition-transform transform hover:scale-110 hover:shadow-2xl"
                     >
                         Mail Us
                     </a>

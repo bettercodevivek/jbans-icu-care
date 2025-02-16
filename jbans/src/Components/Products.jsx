@@ -288,7 +288,7 @@ const Products = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-center pb-12 text-red-600">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold text-center pb-12 text-emerald-600">
         Our Range of Products
       </h1>
       <h2 className="text-md sm:text-2xl md:text-2xl lg:text-2xl  text-center pb-12 text-black">

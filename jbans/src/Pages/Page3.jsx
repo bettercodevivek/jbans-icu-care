@@ -57,7 +57,7 @@ const TestimonialSlider = ({ testimonials }) => {
           <div key={testimonial.id} className="min-w-full flex justify-center">
             <div className="bg-white shadow-lg rounded-2xl overflow-hidden drop-shadow-xl p-0 w-80 lg:w-96 mx-4 transform transition-transform duration-500 hover:scale-105">
               <div className="flex flex-col items-center p-4">
-                <div className="w-full h-40 bg-gradient-to-tr from-red-500 via-red-400 to-red-600 flex justify-center items-center">
+                <div className="w-full h-40 bg-emerald-600 flex justify-center items-center">
                   <img
                     className="w-32 h-32 object-cover object-center aspect-square rounded-full border-4 border-white shadow-lg transform transition-transform duration-300 hover:scale-110"
                     src={testimonial.image}
@@ -75,7 +75,7 @@ const TestimonialSlider = ({ testimonials }) => {
 
       {/* Navigation Buttons */}
       <button
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-red-600 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 focus:outline-none transition duration-300 ease-in-out"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-emerald-600 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 focus:outline-none transition duration-300 ease-in-out"
         onClick={goToPrev}
         aria-label="Previous slide"
       >
@@ -91,7 +91,7 @@ const TestimonialSlider = ({ testimonials }) => {
         </svg>
       </button>
       <button
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-red-600 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 focus:outline-none transition duration-300 ease-in-out"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-emerald-600 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 focus:outline-none transition duration-300 ease-in-out"
         onClick={goToNext}
         aria-label="Next slide"
       >
@@ -141,7 +141,7 @@ const Page3 = () => {
 
   return (
     <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative top-16 mb-16 lg:top-8 md:top-8">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8 md:mb-12 text-red-600">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8 md:mb-12 text-emerald-600">
         Our Prime Corporate Customers
       </h2>
       <TestimonialSlider testimonials={testimonials} />

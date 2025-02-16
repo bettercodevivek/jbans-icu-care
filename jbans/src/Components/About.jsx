@@ -24,7 +24,7 @@ const About = () => {
 
         {/* Founder card */}
         <section className="flex justify-center mb-16">
-          <div className="bg-gradient-to-r from-red-500 via-red-400 to-red-700 rounded-3xl shadow-2xl p-8 max-w-md md:max-w-lg transform transition hover:-translate-y-1 hover:shadow-2xl duration-300">
+          <div className="bg-emerald-600 rounded-3xl shadow-2xl p-8 max-w-md md:max-w-lg transform transition hover:-translate-y-1 hover:shadow-2xl duration-300">
             <img
               className="w-32 h-32 mx-auto rounded-full object-cover mb-6 border-4 border-white"
               src="https://i.postimg.cc/CxvQBRCJ/IMG-20240624-WA0065-1.webp"

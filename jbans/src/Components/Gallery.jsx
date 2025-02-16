@@ -19,7 +19,7 @@ const Gallery = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
       <header className="relative h-72 sm:h-96 bg-cover bg-center" style={{ backgroundImage: 'url("/path-to-your-wallpaper.jpg")' }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-red-500 via-red-600 to-red-800 opacity-90 flex items-center justify-center">
+        <div className="absolute inset-0 bg-emerald-600 opacity-90 flex items-center justify-center">
           <h1 className="text-5xl sm:text-6xl text-white font-extrabold drop-shadow-md animate-fadeIn">
             Gallery
           </h1>
