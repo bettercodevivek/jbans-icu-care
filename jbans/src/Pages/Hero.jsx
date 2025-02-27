@@ -15,7 +15,7 @@ const Hero = () => {
   const slidesContent = [
     {
       title: "WELCOME TO JBANS ICU CARE PVT. LTD. ",
-      description: "BEST CRITICAL CARE MEDICINE PCD COMPANY",
+      description: "BEST CRITICAL CARE MEDICINE COMPANY",
       buttonText: "Check our Products",
       link: "/products",
     },
