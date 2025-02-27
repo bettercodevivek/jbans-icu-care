@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Page4 = () => {
-  // Sample data for the cards
+ 
   const divisions = [
     {
       name: 'Critical Care Division',
@@ -19,8 +19,8 @@ const Page4 = () => {
 
   return (
     <section className="mt-16 mb-16 px-4">
-      <div className="max-w-7xl mx-auto text-center">
-        <h1 className="text-4xl font-extrabold text-emerald-600 mb-12">Our Divisions</h1>
+      <div className="max-w-7xl w-80 sm:w-full  mx-auto text-center">
+        <h1 className="text-3xl font-bold text-emerald-600 mb-12">Our Divisions</h1>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {divisions.map((division, index) => (
             <div

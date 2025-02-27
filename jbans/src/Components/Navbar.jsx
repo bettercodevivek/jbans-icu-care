@@ -12,7 +12,7 @@ export default function Navbar() {
 
     return (
         <header className="sticky top-0 z-50 bg-white">
-            <nav className="bg-white shadow-md px-4 lg:px-8 py-2.5">
+            <nav className="bg-white shadow-md px-4 lg:px-8 py-0">
                 <div className="flex items-center justify-between mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
@@ -33,8 +33,8 @@ export default function Navbar() {
                         </svg>
                     </button>
 
-                    <div className="hidden text-white bg-emerald-600 p-4 rounded-full lg:flex lg:items-center lg:space-x-8">
-                        <ul className="flex space-x-6 items-center font-medium">
+                    <div className="hidden text-emerald-600 bg-white p-4 rounded-full lg:flex lg:items-center lg:space-x-8">
+                        <ul className="flex space-x-6 items-center font-semibold text-lg">
                             <li>
                                 <NavLink to='/'
                                     className={({ isActive }) =>
