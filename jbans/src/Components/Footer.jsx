@@ -1,100 +1,71 @@
 import React from 'react';
-import { FaArrowUp, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
+import { FaArrowUp, FaInstagram, FaFacebook, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaCapsules, FaFlask } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="relative bg-gray-900 text-white py-6 px-4 md:px-6 lg:px-8">
-            {/* Background overlay */}
-            <div className="absolute inset-0">
-                <img 
-                    src="https://i.postimg.cc/Hk3Vk0qP/greg-rosenke-GOWz0zTf_vY-unsplash_(1).webp" 
-                    alt="Background" 
-                    className="w-full h-full object-cover opacity-30" 
-                />
-            </div>
-            {/* Content container */}
-            <div className="relative container mx-auto flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 backdrop-blur-sm bg-zinc-100 bg-opacity-50 rounded-lg p-4 shadow-lg">
-                {/* Logo and company info */}
-                <div className="text-center lg:w-1/4">
-                    <a href="#" className="flex justify-center mb-2">
-                        <img 
-                            src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" 
-                            alt="Logo" 
-                            className="h-20 w-36" 
-                        />
-                    </a>
-                    <h2 className="text-lg lg:text-xl font-bold mb-1">J-BANS ICU CARE PVT. LTD.</h2>
-                    <p className="text-sm lg:text-md text-black">QUALITY WITH INNOVATION</p>
+        <footer className="bg-gray-900 text-white py-12 px-6 md:px-12 border-t border-gray-800">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
+                {/* Logo and Vision */}
+                <div className="flex flex-col items-center md:items-start">
+                    <img 
+                        src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" 
+                        alt="Logo" 
+                        className="h-20 mb-4"
+                    />
+                    <h2 className="text-xl font-bold">J-BANS ICU CARE PVT. LTD.</h2>
+                    <p className="text-sm text-gray-300 italic">"Advancing Healthcare, Ensuring Quality."</p>
                 </div>
-                {/* Quick links */}
-                <div className="flex flex-col lg:w-1/4">
-                    <h3 className="text-md text-center font-semibold">Quick Links</h3>
-                    <nav className="flex flex-col space-y-1 text-center">
-                        <Link to='/home' className="transition hover:text-red-600">Home</Link>
-                        <Link to="/about" className="transition hover:text-red-600">About Us</Link>
-                        <Link to="/products" className="transition hover:text-red-600">Our Products</Link>
-                        <Link to="/quality" className="transition hover:text-red-600">Quality and R&D</Link>
-                        <Link to="/contact" className="transition hover:text-red-600">Contact Us</Link>
+                
+                {/* Quick Links with Icons */}
+                <div className="flex flex-col items-center md:items-start">
+                    <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+                    <nav className="flex flex-col space-y-2 text-gray-300">
+                        <Link to='/home' className="hover:text-emerald-400 flex items-center gap-2"><FaCapsules /> Home</Link>
+                        <Link to="/about" className="hover:text-emerald-400 flex items-center gap-2"><FaFlask /> About Us</Link>
+                        <Link to="/products" className="hover:text-emerald-400 flex items-center gap-2"><FaCapsules /> Our Products</Link>
+                        <Link to="/quality" className="hover:text-emerald-400 flex items-center gap-2"><FaFlask /> Quality & R&D</Link>
+                        <Link to="/contact" className="hover:text-emerald-400 flex items-center gap-2"><FaEnvelope /> Contact Us</Link>
                     </nav>
                 </div>
-                {/* Address Section */}
-                <div className="flex flex-col lg:w-1/4 text-center">
-                    <h3 className="text-md font-semibold mb-2">Address</h3>
-                    <div className="shadow-lg backdrop-blur-lg text-sm rounded-lg p-2 mb-2">
-                        Reg. Office: U 178 A, Near SBI Shakarpur Vikas Marg East Delhi-110092 
-                    </div>
-                    <div className="text-sm shadow-lg backdrop-blur-lg rounded-lg p-2">
-                        Corp. Office: 341, Vardhman Sunrize Plaza, LSC Plot No.1 Vasundra Enclave, Kondli, New Delhi-110096
-                    </div>
+                
+                {/* Contact Information */}
+                <div className="flex flex-col items-center md:items-start">
+                    <h3 className="text-lg font-semibold mb-4">Reach Out to Us</h3>
+                    {/* <p className="flex items-center gap-2 text-gray-300">
+                        <FaMapMarkerAlt className="shrink-0" /> <span className="text-left">U 178 A, Near SBI Shakarpur, Delhi-110092</span>
+                    </p> */}
+                    <p className="flex items-center font-bold mt-2 text-gray-300">
+                       <span>341, Vardhman Plaza, Vasundhara Enclave, Delhi-110096</span>
+                    </p>
+                    <p className="flex items-center gap-2 mt-2 text-gray-300">
+                        <FaEnvelope /> <a href="mailto:info@jbansicucare.com" className="hover:text-emerald-400">info@jbansicucare.com</a>
+                    </p>
+                    <p className="flex items-center gap-2 mt-2 text-gray-300">
+                        <FaPhoneAlt /> +91 9876543210
+                    </p>
                 </div>
-                {/* Mail and Website Section */}
-                <div className="flex flex-col lg:w-1/4 text-center md:mx-4 lg:mx-4">
-                    <h3 className="text-md font-semibold mb-2">Contact Information</h3>
-                    <div className="shadow-lg backdrop-blur-lg text-sm rounded-lg p-2 mb-2">
-                        <a 
-                            href="mailto:info@jbansicucare.com" 
-                            className="text-black hover:text-red-600 transition"
-                        >
-                            info@jbansicucare.com
-                        </a>
+                
+                {/* Social Media & Back to Top */}
+                <div className="flex flex-col items-center md:items-end">
+                    <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div className="flex space-x-4 text-xl">
+                        <a href="#" className="hover:text-emerald-400"><FaInstagram /></a>
+                        <a href="#" className="hover:text-emerald-400"><FaFacebook /></a>
+                        <a href="#" className="hover:text-emerald-400"><FaYoutube /></a>
                     </div>
-                    <div className="shadow-lg backdrop-blur-lg text-sm rounded-lg p-2">
-                        <a 
-                            href="https://www.jbansicucare.com" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="text-black hover:text-red-600 transition"
-                        >
-                            www.jbansicucare.com
-                        </a>
-                    </div>
-                </div>
-                {/* Developer credits */}
-                <div className="flex flex-col lg:w-1/4">
-                    <h3 className="text-md font-semibold text-center mb-2">Designed and Developed by</h3>
-                    <a 
-                        href="https://www.vevywebsolutions.online/" 
-                        target='_blank'
-                        className="text-black bg-inherit backdrop-blur-xl rounded-full drop-shadow-lg p-4 transition hover:text-red-600 text-center text-sm"
-                    >
-                        Vevy Web Solutions
-                    </a>
-                </div>
-                {/* Back to top button */}
-                <div className="flex flex-col lg:w-1/4 items-center">
                     <button
-                        onClick={() => document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className="flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-3 rounded-full shadow-lg transition transform hover:scale-105"
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        className="mt-6 bg-emerald-600 text-white hover:bg-emerald-700 py-2 px-4 rounded-lg shadow-md flex items-center space-x-2 transition-transform transform hover:scale-110"
                     >
-                        <FaArrowUp />
-                        <span className="text-sm">Back to Top</span>
+                        <FaArrowUp /> <span>Back to Top</span>
                     </button>
                 </div>
             </div>
+            
             {/* Copyright */}
-            <div className="text-center mt-4 text-sm">
-                <p>&copy; {new Date().getFullYear()} J-BANS ICU CARE PVT.LTD. All Rights Reserved.</p>
+            <div className=" font-bold text-center text-gray-400 text-sm mt-12 pt-6 border-t border-gray-700">
+                &copy; {new Date().getFullYear()} J-BANS ICU CARE PVT. LTD. All Rights Reserved.
             </div>
         </footer>
     );
