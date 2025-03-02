@@ -42,7 +42,7 @@ const Footer = () => {
                         <FaEnvelope /> <a href="mailto:info@jbansicucare.com" className="hover:text-emerald-400">info@jbansicucare.com</a>
                     </p>
                     <p className="flex items-center gap-2 mt-2 text-gray-300">
-                        <FaPhoneAlt /> +91 9876543210
+                        <FaPhoneAlt /> +91 8527187932
                     </p>
                 </div>
                 

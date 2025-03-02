@@ -81,10 +81,10 @@ const Hero = () => {
 
       {/* Fixed Contact & Download Icons */}
       <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
-        <a href="tel:+919876543210" className="bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300">
+        <a href="tel:+918527187932" className="bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300">
           <FaPhoneAlt size={24} />
         </a>
-        <a href="https://wa.me/919876543210" className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300">
+        <a href="https://wa.me/+918527187932" className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300">
           <FaWhatsapp size={24} />
         </a>
       </div>
