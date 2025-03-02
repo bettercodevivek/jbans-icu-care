@@ -1,8 +1,32 @@
 import React from "react";
-
+import { FaUsers, FaBuilding,FaHandshake,FaTablets} from "react-icons/fa";
+import { FiTablet } from "react-icons/fi";
 export default function AboutInfoPage() {
   return (
     <section className="bg-gray-100 py-16 px-6 lg:px-16">
+      {/* Company Metrics Section */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-12">
+        <div className="p-6 bg-white shadow-lg rounded-lg border border-gray-200">
+          <FaUsers className="text-emerald-600 text-4xl mx-auto mb-3" />
+          <h3 className="text-2xl font-bold text-gray-800">450+</h3>
+          <p className="text-gray-600">Employees</p>
+        </div>
+        <div className="p-6 bg-white shadow-lg rounded-lg border border-gray-200">
+          <FaTablets className="text-blue-500 text-4xl mx-auto mb-3" />
+          <h3 className="text-2xl font-bold text-gray-800">150+</h3>
+          <p className="text-gray-600">Products</p>
+        </div>
+        <div className="p-6 bg-white shadow-lg rounded-lg border border-gray-200">
+          <FaBuilding className="text-yellow-500 text-4xl mx-auto mb-3" />
+          <h3 className="text-2xl font-bold text-gray-800">7+ Years</h3>
+          <p className="text-gray-600">Experience</p>
+        </div>
+        <div className="p-6 bg-white shadow-lg rounded-lg border border-gray-200">
+          <FaHandshake className="text-red-500 text-4xl mx-auto mb-3" />
+          <h3 className="text-2xl font-bold text-gray-800">65000+</h3>
+          <p className="text-gray-600">Customers</p>
+        </div>
+      </div>
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-emerald-600 mb-6">About J-BANS ICU Care</h2>
         <p className="text-lg text-gray-700 leading-relaxed">

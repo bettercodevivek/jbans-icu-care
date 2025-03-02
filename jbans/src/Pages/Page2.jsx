@@ -1,300 +1,267 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { FaDownload } from "react-icons/fa";
+const ProductSlider = ({ products }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const intervalRef = useRef(null);
 
+  const resetAutoSlide = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+    intervalRef.current = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % products.length);
+    }, 3000);
+  };
 
+  useEffect(() => {
+    resetAutoSlide();
+    return () => clearInterval(intervalRef.current);
+  }, [products.length]);
 
-export default function Page2() {
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % products.length);
+    resetAutoSlide();
+  };
+
+  const goToPrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + products.length) % products.length);
+    resetAutoSlide();
+  };
+
+  const handleTouchStart = (e) => {
+    e.preventDefault();
+    const touchStartX = e.touches[0].clientX;
+    const touchStartY = e.touches[0].clientY;
+  
+    const handleTouchMove = (e) => {
+      e.preventDefault();
+      const touchEndX = e.changedTouches[0].clientX;
+      const touchEndY = e.changedTouches[0].clientY;
+      if (Math.abs(touchStartX - touchEndX) > Math.abs(touchStartY - touchEndY)) {
+        if (touchStartX > touchEndX) {
+          goToNext();
+        } else {
+          goToPrev();
+        }
+      }
+      e.target.removeEventListener("touchmove", handleTouchMove);
+    };
+  
+    e.target.addEventListener("touchmove", handleTouchMove, { passive: false });
+  };
+  
+  return (
+    <div className="p-6 relative top-12 flex flex-col mb-12 gap-8 justify-center items-center overflow-hidden w-full">
+      <div
+        className="flex transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        onTouchStart={handleTouchStart}
+      >
+        {products.map((product) => (
+          <div key={product.id} className="min-w-full flex justify-center">
+            <div className="bg-white border-emerald-600 border-solid border-4 bg-opacity-80 backdrop-blur-lg drop-shadow-xl rounded-3xl overflow-hidden p-6 w-80 mx-4 transform transition-transform duration-500 hover:scale-105">
+              <div className="flex flex-col items-center">
+                <div className="w-full h-48 flex justify-center items-center">
+                  <img
+                    className="w-40 h-40 object-contain transition-transform duration-300 hover:scale-110"
+                    src={product.image}
+                    alt={product.name}
+                  />
+                </div>
+                <div className="text-center mt-4">
+                  <h3 className="text-xl font-bold text-gray-800">{product.name}</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <button
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-emerald-600 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 focus:outline-none transition duration-300 ease-in-out"
+        onClick={goToPrev}
+        aria-label="Previous slide"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-emerald-600 text-white p-2 rounded-full shadow-lg hover:bg-gray-900 focus:outline-none transition duration-300 ease-in-out"
+        onClick={goToNext}
+        aria-label="Next slide"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  );
+};
+
+const Page2 = () => {
+  const products = [
+    {
+      id: 1,
+      name: "SODA-Q 25/ SODA-Q 100",
+      image: "https://i.postimg.cc/bwpJD15b/IMG-20240623-WA0010-removebg-preview.webp",
+    },
+    {
+      id: 2,
+      name: "J-BANS LBU",
+      image: "https://i.postimg.cc/SxdKWJ0P/IMG-20240623-WA0012-removebg-preview.webp",
+    },
+    {
+      id: 3,
+      name: "AGGRABAN",
+      image: "https://i.postimg.cc/Pqq5KTT5/IMG-20240623-WA0013-removebg-preview.webp",
+    },
+    {
+      id: 4,
+      name: "GLUCONIT",
+      image: "https://i.postimg.cc/FsjzHTTN/IMG-20240619-WA0007-removebg-preview.webp",
+    },
+    {
+      id: 5,
+      name: 'MINOBAN',
+      image: 'https://i.postimg.cc/BZrdSfhw/IMG-20240619-WA0005.webp',
+    },
+    {
+      id: 6,
+      name: 'MINOBAN',
+      image: 'https://i.postimg.cc/1z7jbknB/IMG-20240624-WA0009.webp',
+    },
+    {
+      id: 7,
+      name: 'ORNIBAN',
+      image: 'https://i.postimg.cc/907KdLfp/IMG-20240624-WA0004.webp',
+    },
+    {
+      id: 8,
+      name: 'MEGBAN',
+      image: 'https://i.postimg.cc/447DRx19/IMG-20240624-WA0005.webp',
+    },
+    {
+      id: 9,
+      name: 'DOXYBIN',
+      image: 'https://i.postimg.cc/VkRTWrz3/IMG-20240624-WA0006.webp',
+    },
+    {
+      id: 10,
+      name: 'ONDABAN',
+      image: 'https://i.postimg.cc/K8FwTrhP/IMG-20240624-WA0007.webp',
+    },
+    {
+      id: 11,
+      name: 'MUCODRAIN',
+      image: 'https://i.postimg.cc/W41yWN3t/IMG-20240624-WA0008.webp',
+    },
+    {
+      id: 12,
+      name: 'J-PRED-500',
+      image: 'https://i.postimg.cc/3Rycht2T/IMG-20240624-WA0010.webp',
+    },
+    {
+      id: 13,
+      name: 'J-PRED-40',
+      image: 'https://i.postimg.cc/9FHn3tM6/IMG-20240624-WA0016.webp',
+    },
+    {
+      id: 14,
+      name: 'J-PRED-125',
+      image: 'https://i.postimg.cc/9QWg0my1/IMG-20240624-WA0017.webp',
+    },
+    {
+      id: 15,
+      name: 'J-PRED-1000',
+      image: 'https://i.postimg.cc/zfQxxT6P/IMG-20240624-WA0019.webp',
+    },
+    {
+      id: 16,
+      name: 'PANTOBAN-40 ',
+      image: 'https://i.postimg.cc/cHV5Lfc8/IMG-20240624-WA0011.webp',
+    },
+    {
+      id: 17,
+      name: 'TAZOBAN',
+      image: 'https://i.postimg.cc/MHV3MXs3/IMG-20240624-WA0012.webp',
+    },
+    {
+      id: 18,
+      name: 'J-CETAM',
+      image: 'https://i.postimg.cc/05wBHH8G/IMG-20240624-WA0013.webp',
+    },
+    {
+      id: 19,
+      name: 'AQABAN',
+      image: 'https://i.postimg.cc/7ZmsTFV4/IMG-20240624-WA0014.webp',
+    },
+    {
+      id: 20,
+      name: 'CEFBAN',
+      image: 'https://i.postimg.cc/PrbFdpvP/IMG-20240624-WA0015.webp',
+    },
+    {
+      id: 21,
+      name: 'AXAMIK-T',
+      image: 'https://i.postimg.cc/9f0xPL87/IMG-20240624-WA0018.webp',
+    },
+    {
+      id: 22,
+      name: 'SODA-Q 25',
+      image: 'https://i.postimg.cc/rsXQkM81/IMG-20240624-WA0020.webp',
+    },
+    {
+      id: 23,
+      name: 'K-BAN10',
+      image: 'https://i.postimg.cc/C1fmXzVM/IMG-20240624-WA0021.webp',
+    },
+    {
+      id: 24,
+      name: 'ESOMERZ',
+      image: 'https://i.postimg.cc/7P0KNGVm/IMG-20240624-WA0022.webp',
+    },
+  ];
 
   return (
-
-    <div className="p-6 relative top-12 flex flex-col mb-12 gap-8 justify-center items-center">
-
-
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-8 md:gap-12 lg:gap-16">
-
-        {/* Product 1 */}
-
-        <div className="relative">
-
-          <img
-
-            src="https://i.postimg.cc/bwpJD15b/IMG-20240623-WA0010-removebg-preview.webp"
-
-            className="max-w-full md:max-w-xs lg:max-w-sm rounded-2xl"
-
-            alt="Product"
-
-            style={{
-
-              filter: "drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25))",
-
-            }}
-
-          />
-
-          <div className="absolute inset-0 rounded-2xl border-2 border-transparent" />
-
-        </div>
-
-        {/* Card 1 */}
-
-        <div className="bg-gradient-to-r from-red-500 via-red-500 to-red-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-8 max-w-xs md:max-w-md lg:max-w-lg flex flex-col justify-between transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
-
-          <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-white mb-4">
-
-            SODA-Q 25/ SODA-Q 100
-
-          </h1>
-
-          <p className="text-white leading-relaxed">
-
-  <strong>Product:</strong> SODA-Q (Sodium bicarbonate Tr 8.4%)<br/><br/>
-
-
-
-  <strong>Form:</strong>
-
-  <ul>
-
-    <li>Available as immol/ml in 10 ml, 25 ml ampoules, and 100 ml vials.</li>
-
-    <li>Each ampoule contains 25 mmol of sodium bicarbonate 8.4%.</li>
-
-  </ul>
-
-
-
-  <strong>Dosage:</strong>
-
-  <ul>
-
-    <li>25 to 50 mL of an 8.4% solution may be given by slow IV injection followed by infusion of diluted solution, if needed.</li>
-
-    <li>The full dose may also be given by IV infusion of the diluted solution.</li>
-
-    <li>50 to 100 mL of an 8.4% solution may be given by slow IV injection or infusion of diluted solution.</li>
-
-  </ul>
-
-</p>
-
-
-
-        </div>
-
+    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative top-16 mb-16 lg:top-8 md:top-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-emerald-600">
+        Our Premium Products
+      </h2>
+      <ProductSlider products={products} />
+      {/* Download Buttons */}
+      <div className="flex flex-col items-center gap-4">
+        <a
+          href="/JBANS-Product-List.xlsx"
+          download
+          className="bg-emerald-600 text-white flex items-center gap-2 px-6 py-3 rounded-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300"
+        >
+          <FaDownload size={20} /> Download Product List
+        </a>
+        <a
+          href="/JBANS-Product-Catalog.pdf"
+          download
+          className="bg-red-600 text-white flex items-center gap-2 px-6 py-3 rounded-lg shadow-lg hover:bg-red-700 transition-colors duration-300"
+        >
+          <FaDownload size={20} /> Download Product Catalog
+        </a>
       </div>
-
-
-
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-8 md:gap-12 lg:gap-16">
-
-        {/* Product 2 */}
-
-        <div className="relative">
-
-          <img
-
-            src="https://i.postimg.cc/SxdKWJ0P/IMG-20240623-WA0012-removebg-preview.webp"
-
-            className="max-w-full md:max-w-xs lg:max-w-sm rounded-2xl"
-
-            alt="Product"
-
-            style={{
-
-              filter: "drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25))",
-
-            }}
-
-          />
-
-          <div className="absolute inset-0 rounded-2xl border-2 border-transparent" />
-
-        </div>
-
-        {/* Card 2 */}
-
-        <div className="bg-gradient-to-r from-teal-500 via-teal-500 to-teal-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-8 max-w-xs md:max-w-md lg:max-w-lg flex flex-col justify-between transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
-
-          <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-white mb-4">
-
-            J-BANS LBU
-
-          </h1>
-
-          <p className="text-white leading-relaxed">
-
-  <strong>Albumin Human:</strong> A purified form of human serum albumin used for various medical purposes.<br/><br/>
-
-
-
-  <strong>Uses:</strong>
-
-  <ul>
-
-    <li>To replace lost albumin in patients with hypoalbuminemia</li>
-
-    <li>To treat hypovolemia</li>
-
-    <li>To treat ascites</li>
-
-    <li>As a component in some diagnostic imaging kits</li>
-
-  </ul>
-
-
-
-  <strong>Primary Protein:</strong>
-
-  <ul>
-
-    <li>Human serum albumin is the main protein found in human blood plasma.</li>
-
-  </ul>
-
-</p>
-
-
-
-        </div>
-
-      </div>
-
-
-
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-8 md:gap-12 lg:gap-16">
-
-        {/* Product 3 */}
-
-        <div className="relative">
-
-          <img
-
-            src="https://i.postimg.cc/Pqq5KTT5/IMG-20240623-WA0013-removebg-preview.webp"
-
-            className="max-w-full md:max-w-xs lg:max-w-sm rounded-2xl"
-
-            alt="Product"
-
-            style={{
-
-              filter: "drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25))",
-
-            }}
-
-          />
-
-          <div className="absolute inset-0 rounded-2xl border-2 border-transparent" />
-
-        </div>
-
-        {/* Card 3 */}
-
-        <div className="bg-gradient-to-r from-pink-500 via-pink-500 to-fuchsia-700 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-8 max-w-xs md:max-w-md lg:max-w-lg flex flex-col justify-between transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
-
-          <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-white mb-4">
-
-            AGGRABAN
-
-          </h1>
-
-          <p className="text-white leading-relaxed">
-
-  <strong>Usage:</strong>
-
-  <ul>
-
-    <li>To assist blood flow to the heart</li>
-
-    <li>To manage chest pain</li>
-
-    <li>To manage heart attack</li>
-
-    <li>In patients whose heart vessels are dilated with a balloon during percutaneous coronary intervention</li>
-
-    <ul>
-
-      <li>A procedure where a small tube or stent is implanted to improve blood flow to the heart</li>
-
-    </ul>
-
-  </ul>
-
-</p>
-
-
-
-        </div>
-
-      </div>
-
-
-
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-evenly gap-8 md:gap-12 lg:gap-16">
-
-        {/* Product 4 */}
-
-        <div className="relative">
-
-          <img
-
-            src="https://i.postimg.cc/FsjzHTTN/IMG-20240619-WA0007-removebg-preview.webp"
-
-            className="max-w-full md:max-w-xs lg:max-w-sm rounded-2xl"
-
-            alt="Product"
-
-            style={{
-
-              filter: "drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.25))",
-
-            }}
-
-          />
-
-          <div className="absolute inset-0 rounded-2xl border-2 border-transparent" />
-
-        </div>
-
-        {/* Card 4 */}
-
-        <div className="bg-gradient-to-r from-amber-900 via-amber-800 to-orange-900 bg-opacity-80 backdrop-blur-md shadow-2xl rounded-2xl p-4 md:p-8 max-w-xs md:max-w-md lg:max-w-lg flex flex-col justify-between transition-transform duration-500 ease-in-out transform hover:translate-y-1 hover:shadow-2xl hover:scale-105">
-
-          <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-white mb-4">
-
-            GLUCONIT
-
-          </h1>
-
-          <p className="text-white leading-relaxed">
-
-          <p className="mb-6">
-
-        Gluconit Injection is a combination of Calcium Gluconate and Calcium Lactobionate, available in 10 ml doses. It is commonly used for the diagnosis or treatment of low blood calcium levels.
-
-      </p>
-
-      <h2 className="text-2xl font-bold mb-4">Side Effects</h2>
-
-      <ul className="list-disc pl-6">
-
-        <li className="mb-2">Tooth discoloration</li>
-
-        <li className="mb-2">Higher doses can weaken bones and ligaments</li>
-
-        <li className="mb-2">Muscle weakness</li>
-
-        <li className="mb-2">Nervous system problems</li>
-
-      </ul>
-
-          </p>
-
-        </div>
-
-      </div>
-
     </div>
-
   );
+};
 
-}
+export default Page2;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { FaUser, FaEnvelope, FaPhone, FaCommentDots, FaPhoneAlt } from "react-icons/fa";
 
 const EnquiryForm = () => {
   const [formData, setFormData] = useState({
@@ -21,12 +22,7 @@ const EnquiryForm = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        "service_74q4lfg", 
-        "template_whb5zvf",
-        formData,
-        "CO8MTGj7-PgUa6k1w" 
-      )
+      .send("service_74q4lfg", "template_whb5zvf", formData, "CO8MTGj7-PgUa6k1w")
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
@@ -45,56 +41,82 @@ const EnquiryForm = () => {
   };
 
   return (
-    <div className="max-w-lg sm:w-full w-96 mx-auto bg-gray-100 shadow-xl border-solid border-2 rounded-lg p-6 my-8">
-      <h2 className="text-2xl font-bold text-center text-emerald-600 mb-4">
-        Enquiry Form
+    <div className="max-w-lg sm:w-full w-80 mx-auto bg-gray-100 shadow-xl border-solid border-2 rounded-lg p-6 my-8">
+      
+      {/* Catchy Heading */}
+      <h2 className="text-3xl font-bold text-center text-emerald-600 mb-6">
+        Get in Touch – We're Here to Help! ✨
       </h2>
+
       <form onSubmit={sendEmail} className="space-y-4">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
-        />
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Your Phone"
-          value={formData.phone}
-          onChange={handleChange}
-          required
-          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
-        />
-        <textarea
-          name="message"
-          placeholder="Your Enquiry"
-          value={formData.message}
-          onChange={handleChange}
-          required
-          rows="4"
-          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
-        />
+        
+        {/* Name Input */}
+        <div className="relative">
+          <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="w-full p-3 pl-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        {/* Email Input */}
+        <div className="relative">
+          <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="w-full p-3 pl-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        {/* Phone Input */}
+        <div className="relative">
+          <FaPhoneAlt className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your Phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+            className="w-full p-3 pl-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        {/* Message Input */}
+        <div className="relative">
+          <FaCommentDots className="absolute left-3 top-4 text-gray-500" />
+          <textarea
+            name="message"
+            placeholder="Your Enquiry"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            rows="4"
+            className="w-full p-3 pl-10 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+        </div>
+
+        {/* Submit Button */}
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-emerald-600 text-white p-3 rounded-md shadow-md hover:bg-emerald-700 transition duration-300 disabled:opacity-50"
+          className="w-full bg-emerald-600 text-white p-3 rounded-md shadow-md hover:bg-emerald-700 transition duration-300 disabled:opacity-50 flex items-center justify-center"
         >
           {loading ? "Sending..." : "Send Enquiry"}
         </button>
       </form>
 
+      {/* Status Message */}
       {status && (
         <p
           className={`mt-4 text-center text-sm ${

@@ -49,14 +49,14 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/JBANS-LIST.xlsx'; // Update with actual file path
-    link.download = 'data.xlsx';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const handleDownload = () => {
+  //   const link = document.createElement('a');
+  //   link.href = '/JBANS-LIST.xlsx'; // Update with actual file path
+  //   link.download = 'data.xlsx';
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <div className="relative flex flex-col items-center justify-center">
@@ -89,11 +89,11 @@ const Hero = () => {
         </a>
       </div>
       
-      <div className="fixed top-1/2 -left-12 z-50 transform -translate-y-1/2">
+      {/* <div className="fixed top-1/2 -left-12 z-50 transform -translate-y-1/2">
         <button onClick={handleDownload} className="bg-emerald-600 text-white flex items-center gap-2 px-4 py-2 rotate-90 rounded-t-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300">
           <FaDownload size={20} /> Injectibles
         </button>
-      </div>
+      </div> */}
       {/* <div className="fixed top-3/4 -left-12 z-50 transform -translate-y-1/2">
         <button onClick={handleDownload} className="bg-emerald-600 text-white flex items-center gap-2 px-4 py-2 rotate-90 rounded-t-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300">
           <FaDownload size={20} /> Catalog

@@ -5,14 +5,16 @@ import Page3 from "../Pages/Page3";
 import Page4 from "../Pages/Page4";
 import AboutInfoPage from "../Pages/AboutInfoPage";
 import EnquiryForm from "../Pages/EnquiryForm";
+import IndiaMart from "../Pages/IndiaMart";
 
 export default function Home(){
     return(
        <>
         <Hero/>
-        {/* <AboutInfoPage/>
-        <EnquiryForm/> */}
+        <AboutInfoPage/>
+        <EnquiryForm/>
         <Page2/>
+        <IndiaMart/>
         <Page3/>
         <Page4/>
        </>

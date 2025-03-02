@@ -84,7 +84,7 @@ const Footer = () => {
                 {/* Back to top button */}
                 <div className="flex flex-col lg:w-1/4 items-center">
                     <button
-                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        onClick={() => document.documentElement.scrollTo({ top: 0, behavior: 'smooth' })}
                         className="flex items-center space-x-2 bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-3 rounded-full shadow-lg transition transform hover:scale-105"
                     >
                         <FaArrowUp />
