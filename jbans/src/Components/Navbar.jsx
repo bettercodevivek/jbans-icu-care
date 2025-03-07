@@ -33,12 +33,12 @@ export default function Navbar() {
                         </svg>
                     </button>
 
-                    <div className="hidden text-emerald-600 bg-white p-4 rounded-full lg:flex lg:items-center lg:space-x-8">
+                    <div className="hidden text-black bg-white p-4 rounded-full lg:flex lg:items-center lg:space-x-8">
                         <ul className="flex space-x-6 items-center font-semibold text-lg">
                             <li>
                                 <NavLink to='/'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-emerald-600 bg-white" : ""} hover:bg-gray-50 hover:text-emerald-600`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
                                     }
                                 >
                                     Home
@@ -47,7 +47,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/about'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-emerald-600 bg-white" : ""} hover:bg-gray-50 hover:text-emerald-600`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
                                     }
                                 >
                                     About Us
@@ -57,7 +57,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/quality'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-emerald-600 bg-white" : ""} hover:bg-gray-50 hover:text-emerald-600`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
                                     }
                                 >
                                     Quality and R&D
@@ -67,7 +67,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/products'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-emerald-600 bg-white" : ""} hover:bg-gray-50 hover:text-emerald-600`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
                                     }
                                 >
                                     Our Products
@@ -76,7 +76,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/gallery'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-emerald-600 bg-white" : ""} hover:bg-gray-50 hover:text-emerald-600`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
                                     }
                                 >
                                 Gallery
@@ -85,7 +85,7 @@ export default function Navbar() {
                             <li>
                                 <NavLink to='/contact'
                                     className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-emerald-600 bg-white" : ""} hover:bg-gray-50 hover:text-emerald-600`
+                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
                                     }
                                 >
                                     Contact Us
@@ -121,7 +121,7 @@ export default function Navbar() {
                             <NavLink to='/home'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-emerald-600" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-black" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
                                 }
                             >
                                 <FiHome className="w-5 h-5" /> <span>Home</span>
@@ -131,7 +131,7 @@ export default function Navbar() {
                             <NavLink to='/about'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-emerald-600" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-black" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
                                 }
                             >
                                 <FiEye className="w-5 h-5" /> <span>About Us</span>
@@ -141,7 +141,7 @@ export default function Navbar() {
                             <NavLink to='/products'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-emerald-600" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-black" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
                                 }
                             >
                                 <FiBox className="w-5 h-5" /> <span>Our Products</span>
@@ -151,7 +151,7 @@ export default function Navbar() {
                             <NavLink to='/quality'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-emerald-600" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-black" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
                                 }
                             >
                                 <FiCheck className="w-5 h-5" /> <span>Quality and R&D</span>
@@ -161,7 +161,7 @@ export default function Navbar() {
                             <NavLink to='/gallery'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-emerald-600" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-black" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
                                 }
                             >
                                 <FaImage className="w-5 h-5" /> <span>Gallery</span>
@@ -171,7 +171,7 @@ export default function Navbar() {
                             <NavLink to='/contact'
                                 onClick={toggleSidebar}
                                 className={({ isActive }) =>
-                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-emerald-600" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
+                                    `flex items-center space-x-4 py-2 px-6 rounded-lg shadow-md bg-white text-lg font-semibold ${isActive ? "text-black" : "text-gray-900"} hover:bg-gray-200 hover:text-emerald-700 transition-transform transform hover:scale-105`
                                 }
                             >
                                 <FiMail className="w-5 h-5" /> <span>Contact Us</span>
