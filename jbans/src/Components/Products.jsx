@@ -3,9 +3,9 @@ import Modal from 'react-modal';
 import { motion } from 'framer-motion';
 import { FiSearch, FiMic, FiChevronDown, FiChevronUp, FiPackage, FiPlusCircle, FiDroplet } from 'react-icons/fi';
 import { FaCapsules, FaPaw, FaStethoscope } from 'react-icons/fa';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from 'react-slick';
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 Modal.setAppElement('#root');
 
@@ -51,38 +51,38 @@ const Products = () => {
   //   'https://via.placeholder.com/800x600/4',
   // ];
 
-  const catalogueImages = [
-    'https://i.postimg.cc/k4HzG6hB/fjmnap3vsjtrdidlx8dm.webp',
-    'https://i.postimg.cc/90qS7mv1/na0sqxoge21zo3965giy.webp',
-    'https://i.postimg.cc/CKR1Wr53/Untitled-1-1-page-0003.webp',
-    'https://i.postimg.cc/jSw6hcKj/Untitled-1-1-page-0004.webp',
-  ];
+  // const catalogueImages = [
+  //   'https://i.postimg.cc/k4HzG6hB/fjmnap3vsjtrdidlx8dm.webp',
+  //   'https://i.postimg.cc/90qS7mv1/na0sqxoge21zo3965giy.webp',
+  //   'https://i.postimg.cc/CKR1Wr53/Untitled-1-1-page-0003.webp',
+  //   'https://i.postimg.cc/jSw6hcKj/Untitled-1-1-page-0004.webp',
+  // ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
 
   const categories = {
     'Critical Care': [
@@ -461,7 +461,7 @@ const Products = () => {
           </motion.div>
         ))}
       </div>
-      {/* Slick Slider for Catalogue Display */}
+      {/* Slick Slider for Catalogue Display
       <div className="px-6 mt-12">
         <h1 className='text-center text-2xl font-semibold mb-8'>Our Product Catalogue</h1>
         <Slider {...settings}>
@@ -476,7 +476,7 @@ const Products = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </div> */}
     </div>
   );
 };
