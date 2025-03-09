@@ -3,6 +3,9 @@ import Modal from 'react-modal';
 import { motion } from 'framer-motion';
 import { FiSearch, FiMic, FiChevronDown, FiChevronUp, FiPackage, FiPlusCircle, FiDroplet } from 'react-icons/fi';
 import { FaCapsules, FaPaw, FaStethoscope } from 'react-icons/fa';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 Modal.setAppElement('#root');
 
@@ -47,6 +50,39 @@ const Products = () => {
   //   'https://via.placeholder.com/800x600/3',
   //   'https://via.placeholder.com/800x600/4',
   // ];
+
+  const catalogueImages = [
+    'https://i.postimg.cc/k4HzG6hB/fjmnap3vsjtrdidlx8dm.webp',
+    'https://i.postimg.cc/90qS7mv1/na0sqxoge21zo3965giy.webp',
+    'https://i.postimg.cc/CKR1Wr53/Untitled-1-1-page-0003.webp',
+    'https://i.postimg.cc/jSw6hcKj/Untitled-1-1-page-0004.webp',
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   const categories = {
     'Critical Care': [
@@ -425,22 +461,22 @@ const Products = () => {
           </motion.div>
         ))}
       </div>
-        {/* Animated Catalogue Display
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {catalogueImages.map((image, index) => (
-          <motion.div 
-            key={index} 
-            className="bg-white shadow-md rounded-lg overflow-hidden"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <img src={image} alt={`Page ${index + 1}`} className="w-full h-60 object-cover" />
-            <div className="p-4 text-center">
-              <p className="text-gray-900 font-bold text-lg">Catalogue Page {index + 1}</p>
+      {/* Slick Slider for Catalogue Display */}
+      <div className="px-6 mt-12">
+        <h1 className='text-center text-2xl font-semibold mb-8'>Our Product Catalogue</h1>
+        <Slider {...settings}>
+          {catalogueImages.map((image, index) => (
+            <div key={index} className="px-2">
+              <div className="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src={image} alt={`Page ${index + 1}`} className="w-full h-full object-cover" />
+                <div className="p-4 text-center">
+                  <p className="text-gray-900 font-bold text-lg">Catalogue Page {index + 1}</p>
+                </div>
+              </div>
             </div>
-          </motion.div>
-        ))}
-      </div> */}
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
