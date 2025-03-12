@@ -55,6 +55,7 @@ const Footer = () => {
                         <a href="#" className="hover:text-emerald-400"><FaYoutube /></a>
                     </div>
                     <button
+                    
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         className="mt-6 bg-emerald-600 text-white hover:bg-emerald-700 py-2 px-4 rounded-lg shadow-md flex items-center space-x-2 transition-transform transform hover:scale-110"
                     >

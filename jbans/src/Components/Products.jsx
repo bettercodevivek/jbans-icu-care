@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { motion } from 'framer-motion';
 import { FiSearch, FiMic, FiChevronDown, FiChevronUp, FiPackage, FiPlusCircle, FiDroplet } from 'react-icons/fi';
-import { FaCapsules, FaPaw, FaStethoscope } from 'react-icons/fa';
+import { FaDownload, FaCapsules, FaHospital, FaPaw, FaStethoscope, FaEye } from 'react-icons/fa';
+import ProductCatalog from './ProductCatalog';
 // import Slider from 'react-slick';
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -42,6 +43,10 @@ const Products = () => {
     { name: 'Sodium Bicarbonate 8.4% Injection', url: 'https://www.indiamart.com/jbans-icu-care/sodium-bicarbonate-84-injection.html',icon:<FaStethoscope></FaStethoscope> },
     { name: 'Veterinary Medicines', url: 'https://www.indiamart.com/jbans-icu-care/veterinary-medicines.html',icon:<FaPaw></FaPaw>},
     { name: 'Acetylcystine Injection', url: 'https://www.indiamart.com/jbans-icu-care/acetylecystine-injection.html',icon:<FiDroplet></FiDroplet>},
+    { name: 'Pharmaceutical Syrup', url: 'https://www.indiamart.com/jbans-icu-care/pharmaceutical-syrup.html',icon:<FaHospital></FaHospital>},
+    { name: 'MethylPrednisolone-Injection', url: 'https://www.indiamart.com/jbans-icu-care/methylprednisolone-injection.html',icon:<FiDroplet></FiDroplet>},
+    { name: 'Tirofiban Infusion', url: 'https://www.indiamart.com/jbans-icu-care/tirofiban-infusion.html',icon:<FaStethoscope></FaStethoscope>},
+    { name: 'Calcium Gluconate 10ml', url: 'https://www.indiamart.com/jbans-icu-care/calcium-gluconate-calcium-lactobionate-10-ml.html',icon:<FiPackage></FiPackage>},
   ];
 
   // const catalogueImages = [
@@ -428,6 +433,22 @@ const Products = () => {
         </button>
       </div>
 
+      <div className="flex flex-col items-center justify-center gap-4 py-8">
+      <a
+          href="/Jbans-Product-list.pdf"
+          download
+          className="bg-emerald-600 text-white flex items-center gap-2 px-6 py-3 rounded-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300"
+        >
+          <FaDownload size={20} /> Download Product List
+        </a>
+        <button 
+        onClick={()=>document.getElementById('product-catalog').scrollIntoView({behavior:"smooth"})}
+          className="bg-red-600 text-white flex items-center gap-2 px-6 py-3 rounded-lg shadow-lg hover:bg-red-700 transition-colors duration-300"
+        >
+          <FaEye size={20} /> Check Out Our Product Catalog
+        </button>
+      </div>
+
       {/* Product Categories */}
       <div className="text-center mb-8">
         <h2 className="text-2xl font-bold text-gray-800 mb-4">Product Categories</h2>
@@ -477,6 +498,7 @@ const Products = () => {
           ))}
         </Slider>
       </div> */}
+      <ProductCatalog/>
     </div>
   );
 };

@@ -34,62 +34,68 @@ export default function Navbar() {
                     </button>
 
                     <div className="hidden text-black bg-white p-4 rounded-full lg:flex lg:items-center lg:space-x-8">
-                        <ul className="flex space-x-6 items-center font-semibold text-lg">
+                        <ul className="flex space-x-6 items-center font-medium text-lg">
                             <li>
-                                <NavLink to='/'
-                                    className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
-                                    }
-                                >
-                                    Home
-                                </NavLink>
+                            <NavLink to='/'
+    className={({ isActive }) =>
+        `relative block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} 
+        hover:bg-gray-50 hover:text-black after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-emerald-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100`
+    }
+>
+    Home
+</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/about'
-                                    className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
-                                    }
-                                >
-                                    About Us
-                                </NavLink>
+                            <NavLink to='/about'
+    className={({ isActive }) =>
+        `relative block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} 
+        hover:bg-gray-50 hover:text-black after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-emerald-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100`
+    }
+>
+    About Us
+</NavLink>
                             </li>
 
                             <li>
-                                <NavLink to='/quality'
-                                    className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
-                                    }
-                                >
-                                    Quality and R&D
-                                </NavLink>
+                            <NavLink to='/quality'
+    className={({ isActive }) =>
+        `relative block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} 
+        hover:bg-gray-50 hover:text-black after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-emerald-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100`
+    }
+>
+    Quality and R&D
+</NavLink>
                             </li>
                             
                             <li>
-                                <NavLink to='/products'
-                                    className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
-                                    }
-                                >
-                                    Our Products
-                                </NavLink>
+                            <NavLink to='/products'
+    className={({ isActive }) =>
+        `relative block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} 
+        hover:bg-gray-50 hover:text-black after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-emerald-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100`
+    }
+>
+    Our Products
+</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/gallery'
-                                    className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
-                                    }
-                                >
-                                Gallery
-                                </NavLink>
+                            <NavLink to='/gallery'
+    className={({ isActive }) =>
+        `relative block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} 
+        hover:bg-gray-50 hover:text-black after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-emerald-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100`
+    }
+>
+    Gallery
+</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/contact'
-                                    className={({ isActive }) =>
-                                        `block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} hover:bg-gray-50 hover:text-black`
-                                    }
-                                >
-                                    Contact Us
-                                </NavLink>
+                            <NavLink to='/contact'
+    className={({ isActive }) =>
+        `relative block py-2 px-4 rounded-full duration-200 ${isActive ? "text-black bg-white" : ""} 
+        hover:bg-gray-50 hover:text-black after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-emerald-600 after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100`
+    }
+>
+    Contact Us
+</NavLink>
                             </li>
                         </ul>
                     </div>
