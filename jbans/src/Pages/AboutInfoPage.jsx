@@ -50,7 +50,7 @@ export default function AboutInfoPage() {
       </div>
 
       {/* Vision, Mission, Values - Animated Cards with Icons */}
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
         {[
           { title: "Our Vision", content: " As a pharmaceutical company, our vision is to dominate critical care segment by launching a maximum number of inectionn products. our focus is on developing comprehensive range of injectable products, including 2ml, 5ml, 10ml, 100ml, 250ml and 500ml. We aim to launch these products by 2025, covering the full spectrum of critical care segments.", icon: <FaEye className="text-emerald-600 text-4xl md:text-5xl mx-auto mb-4" /> },
           { title: "Our Mission", content: "Our mission is to provide high-quality critical care injections that ensure customer satisfaction, while expanding our reach to a maximum number of dealers and hospitals. If you're interested in doing business with us and earning good profits, you can join our mission.", icon: <FaBullseye className="text-emerald-600 text-4xl md:text-5xl mx-auto mb-4" /> },
@@ -58,14 +58,14 @@ export default function AboutInfoPage() {
         ].map((item, index) => (
           <motion.div 
             key={index} 
-            className="bg-white p-12 shadow-xl rounded-3xl text-center transform transition hover:scale-105 hover:shadow-2xl border-t-4 border-emerald-500"
+            className="bg-white p-6 shadow-lg rounded-xl text-center transform transition hover:scale-105 hover:shadow-xl border-t-4 border-emerald-500"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
             {item.icon}
-            <h3 className="text-2xl md:text-4xl font-semibold text-emerald-600 mb-6">{item.title}</h3>
-            <p className="text-gray-700 text-lg leading-relaxed">{item.content}</p>
+            <h3 className="text-2xl md:text-4xl font-semibold text-emerald-600 mb-4">{item.title}</h3>
+            <p className="text-gray-700 text-sm md:text-lg leading-relaxed">{item.content}</p>
           </motion.div>
         ))}
       </div>
