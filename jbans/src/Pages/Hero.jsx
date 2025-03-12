@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import CountUp from 'react-countup';
-import { FaPhoneAlt, FaWhatsapp, FaFileDownload, FaDownload } from "react-icons/fa";
-import { FiTablet } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { FaPhoneAlt, FaWhatsapp, FaTimes } from "react-icons/fa";
 
 const Hero = () => {
   const ImageSlide = [
-    'https://i.postimg.cc/VkQcTRFb/noah-buscher-x8-ZStuk-S2-PM-unsplash.webp',
-    'https://i.postimg.cc/K8PMCZ67/img27.webp',
-    'https://i.postimg.cc/Hk3Vk0qP/greg-rosenke-GOWz0zTf_vY-unsplash_(1).webp',
-    // 'https://i.postimg.cc/BQcKCyvw/marcelo-leal-taF3klwwAWA-unsplash.webp'
+    "https://i.postimg.cc/VkQcTRFb/noah-buscher-x8-ZStuk-S2-PM-unsplash.webp",
+    "https://i.postimg.cc/K8PMCZ67/img27.webp",
+    "https://i.postimg.cc/Hk3Vk0qP/greg-rosenke-GOWz0zTf_vY-unsplash_(1).webp",
   ];
 
   const slidesContent = [
     {
-      title: "WELCOME TO JBANS ICU CARE PVT. LTD. ",
+      title: "WELCOME TO JBANS ICU CARE PVT. LTD.",
       description: "BEST CRITICAL CARE MEDICINE COMPANY",
       buttonText: "Check our Products",
       link: "/products",
@@ -31,35 +29,44 @@ const Hero = () => {
       buttonText: "Check our Products",
       link: "/products",
     },
-    // {
-    //   title: "Our Segments",
-    //   description: "  The major segments that we cater to are Nephrology, Neurological Disorders, Critical Care, Gynaecology, Ortho, Gastroenterology, Urology, Respiratory and Cardio Metabolic.",
-    //   buttonText: "Check our Products",
-    //   link: "/products",
-    // },
   ];
 
   const [currentIndex, setIndex] = useState(0);
+  const [showPopup, setShowPopup] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % ImageSlide.length);
     }, 4000);
-
     return () => clearInterval(interval);
   }, []);
 
-  // const handleDownload = () => {
-  //   const link = document.createElement('a');
-  //   link.href = '/JBANS-LIST.xlsx'; // Update with actual file path
-  //   link.download = 'data.xlsx';
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
-
   return (
     <div className="relative flex flex-col items-center justify-center">
+      {/* Popup Image */}
+      {showPopup && (
+        <motion.div 
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="relative bg-white p-6 rounded-xl shadow-2xl max-w-lg w-full">
+            <button 
+              className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 transition-all" 
+              onClick={() => setShowPopup(false)}
+            >
+              <FaTimes size={24} />
+            </button>
+            <img 
+              src="https://i.postimg.cc/kXkgpZYk/Landing-Page-Notice.webp" 
+              alt="Popup" 
+              className="w-full h-auto rounded-lg" 
+            />
+          </div>
+        </motion.div>
+      )}
+
       {/* Slideshow */}
       <div className="relative w-11/12 max-w-screen-2xl h-80 md:min-h-screen lg:min-h-screen xl:min-h-screen mx-4 md:mx-auto mt-8 rounded-3xl overflow-hidden">
         {ImageSlide.map((image, index) => (
@@ -79,27 +86,22 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Fixed Contact & Download Icons */}
+      {/* Fixed Contact Icons */}
       <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
-        <a href="tel:+918527187932" className="bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300">
+        <a
+          href="tel:+918527187932"
+          className="bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300"
+        >
           <FaPhoneAlt size={24} />
         </a>
-        <a href="https://wa.me/+918527187932" className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300">
+        <a
+          href="https://wa.me/+918527187932"
+          className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300"
+        >
           <FaWhatsapp size={24} />
         </a>
       </div>
-      
-      {/* <div className="fixed top-1/2 -left-12 z-50 transform -translate-y-1/2">
-        <button onClick={handleDownload} className="bg-emerald-600 text-white flex items-center gap-2 px-4 py-2 rotate-90 rounded-t-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300">
-          <FaDownload size={20} /> Injectibles
-        </button>
-      </div> */}
-      {/* <div className="fixed top-3/4 -left-12 z-50 transform -translate-y-1/2">
-        <button onClick={handleDownload} className="bg-emerald-600 text-white flex items-center gap-2 px-4 py-2 rotate-90 rounded-t-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300">
-          <FaDownload size={20} /> Catalog
-        </button>
-      </div> */}
-          </div>
+    </div>
   );
 };
 
