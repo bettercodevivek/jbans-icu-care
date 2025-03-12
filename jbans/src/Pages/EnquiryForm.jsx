@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { FaUser, FaEnvelope, FaPhone, FaCommentDots, FaPhoneAlt } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaPhone, FaCommentDots, FaPhoneAlt, FaHandshake, FaPaperPlane } from "react-icons/fa";
 
 const EnquiryForm = () => {
   const [formData, setFormData] = useState({
@@ -47,7 +47,7 @@ const EnquiryForm = () => {
       <div className="flex flex-col items-center justify-center">
       <img src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" className="h-20 w-36"/>
       <h2 className="text-2xl md:text-3xl font-bold text-center text-emerald-600 mb-6">
-        Partner With Us - Submit Your Query ✨
+        Let's Connect – Send Your Inquiry
       </h2>
       </div>
       
@@ -112,12 +112,13 @@ const EnquiryForm = () => {
 
         {/* Submit Button */}
         <button
-          type="submit"
-          disabled={loading}
-          className="w-full bg-emerald-600 text-white p-3 rounded-md shadow-md hover:bg-emerald-700 transition duration-300 disabled:opacity-50 flex items-center justify-center"
-        >
-          {loading ? "Sending..." : "Send Enquiry"}
-        </button>
+  type="submit"
+  disabled={loading}
+  className="w-full bg-emerald-600 text-sm md:text-xl text-white p-3 rounded-md shadow-md hover:bg-emerald-700 transition duration-300 disabled:opacity-50 flex items-center justify-center gap-2"
+>
+  {loading ? "Sending..." : "Send Enquiry"}
+  <FaPaperPlane className="text-white text-sm md:text-lg" />
+</button>
       </form>
 
       {/* Status Message */}
