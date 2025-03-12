@@ -246,14 +246,14 @@ const Page2 = () => {
       {/* Download Buttons */}
       <div className="flex flex-col items-center gap-4">
         <a
-          href="/JBANS-LIST.xlsx"
+          href="/Jbans-Product-list.pdf"
           download
           className="bg-emerald-600 text-white flex items-center gap-2 px-6 py-3 rounded-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300"
         >
           <FaDownload size={20} /> Download Product List
         </a>
         <a
-          href="/JBANS-Product-Catalog.pdf"
+          href="/JBANS-Product-Catalog (2).pdf"
           download
           className="bg-red-600 text-white flex items-center gap-2 px-6 py-3 rounded-lg shadow-lg hover:bg-red-700 transition-colors duration-300"
         >
