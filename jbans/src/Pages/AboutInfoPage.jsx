@@ -65,7 +65,7 @@ export default function AboutInfoPage() {
           >
             {item.icon}
             <h3 className="text-2xl md:text-4xl font-semibold text-emerald-600 mb-6">{item.title}</h3>
-            <p className="text-gray-700 text-sm md:text-lg leading-relaxed">{item.content}</p>
+            <p className="text-gray-700 text-lg leading-relaxed">{item.content}</p>
           </motion.div>
         ))}
       </div>
