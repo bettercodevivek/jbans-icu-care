@@ -22,8 +22,8 @@ const TestimonialSlider = ({ testimonials }) => {
   };
 
   return (
-    <div className="relative w-full max-w-screen-lg mx-auto py-12 flex flex-col items-center">
-      <h2 className="text-4xl font-bold text-center text-emerald-600 mb-12">
+    <div className="relative w-full max-w-screen-lg mx-auto py-2 flex flex-col items-center">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-600 mb-12">
         Our Prime Corporate Customers
       </h2>
       
@@ -86,7 +86,7 @@ const Page3 = () => {
   ];
 
   return (
-    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative top-16 mb-16 lg:top-8 md:top-8">
+    <div className="container mx-auto py-2 px-4 sm:px-6 lg:px-8 relative top-2 mb-16 lg:top-8 md:top-8">
       <TestimonialSlider testimonials={testimonials} />
     </div>
   );
