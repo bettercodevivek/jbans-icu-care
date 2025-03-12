@@ -71,7 +71,7 @@ const Hero = () => {
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 rounded-3xl text-white px-4 md:px-8">
               <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl text-center font-semibold mb-4">{slidesContent[index].title}</h1>
               <p className="text-sm md:text-base lg:text-lg xl:text-xl text-center mb-4 px-2">{slidesContent[index].description}</p>
-              <Link to={slidesContent[index].link} className="bg-emerald-600 text-white font-bold py-2 mb-6 px-4 rounded hover:bg-red-700 transition-colors duration-300">
+              <Link to={slidesContent[index].link} className="bg-emerald-600 text-white font-bold py-2 mb-6 px-4 rounded transition-colors duration-300">
                 {slidesContent[index].buttonText}
               </Link>
             </div>
