@@ -6,22 +6,25 @@ export default function AboutInfoPage() {
   return (
     <section className="bg-gray-50 py-12 px-8 lg:px-24">
       {/* Company Metrics Section with Animation */}
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-emerald-600 drop-shadow-sm">
+          Milestones That Define Us
+        </h2>
 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 text-center mb-20">
         {[  
           { icon: <FaUsers className="text-emerald-600 text-4xl md:text-6xl mx-auto mb-4" />, label: "Employees", value: "450+" },
           { icon: <FaTablets className="text-blue-500 text-4xl md:text-6xl mx-auto mb-4" />, label: "Products", value: "150+" },
-          { icon: <FaBuilding className="text-yellow-500 text-4xl md:text-6xl mx-auto mb-4" />, label: "Experience", value: "7+ Years" },
+          { icon: <FaBuilding className="text-yellow-500 text-4xl md:text-6xl mx-auto mb-4" />, label: "Years", value: "7+" },
           { icon: <FaHandshake className="text-red-500 text-4xl md:text-6xl mx-auto mb-4" />, label: "Customers", value: "65,000+" }
         ].map((item, index) => (
           <motion.div 
             key={index} 
-            className="p-10 bg-white shadow-xl rounded-2xl border border-gray-200 transition transform hover:scale-105 hover:shadow-2xl"
+            className="p-10 bg-white border shadow-xl rounded-2xl transition transform hover:scale-105 hover:shadow-2xl"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
             {item.icon}
-            <h3 className="text-2xl font-bold text-gray-900">{item.value}</h3>
+            <h3 className="text-xl font-bold text-gray-900">{item.value}</h3>
             <p className="text-gray-600 text-lg md:text-xl font-bold">{item.label}</p>
           </motion.div>
         ))}
