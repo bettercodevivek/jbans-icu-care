@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 
 export default function AboutInfoPage() {
   return (
-    <section className="bg-gray-50 py-24 px-8 lg:px-24">
+    <section className="bg-gray-50 py-12 px-8 lg:px-24">
       {/* Company Metrics Section with Animation */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center mb-20">
+<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 text-center mb-20">
         {[  
-          { icon: <FaUsers className="text-emerald-600 text-6xl mx-auto mb-4" />, label: "Employees", value: "450+" },
-          { icon: <FaTablets className="text-blue-500 text-6xl mx-auto mb-4" />, label: "Products", value: "150+" },
-          { icon: <FaBuilding className="text-yellow-500 text-6xl mx-auto mb-4" />, label: "Experience", value: "7+ Years" },
-          { icon: <FaHandshake className="text-red-500 text-6xl mx-auto mb-4" />, label: "Customers", value: "65,000+" }
+          { icon: <FaUsers className="text-emerald-600 text-4xl md:text-6xl mx-auto mb-4" />, label: "Employees", value: "450+" },
+          { icon: <FaTablets className="text-blue-500 text-4xl md:text-6xl mx-auto mb-4" />, label: "Products", value: "150+" },
+          { icon: <FaBuilding className="text-yellow-500 text-4xl md:text-6xl mx-auto mb-4" />, label: "Experience", value: "7+ Years" },
+          { icon: <FaHandshake className="text-red-500 text-4xl md:text-6xl mx-auto mb-4" />, label: "Customers", value: "65,000+" }
         ].map((item, index) => (
           <motion.div 
             key={index} 
@@ -21,11 +21,11 @@ export default function AboutInfoPage() {
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
             {item.icon}
-            <h3 className="text-4xl font-bold text-gray-900">{item.value}</h3>
-            <p className="text-gray-600 text-xl font-medium">{item.label}</p>
+            <h3 className="text-2xl font-bold text-gray-900">{item.value}</h3>
+            <p className="text-gray-600 text-lg md:text-xl font-bold">{item.label}</p>
           </motion.div>
         ))}
-      </div>
+      </div>   
 
       {/* About Section */}
       <div className="max-w-4xl mx-auto text-center">
@@ -52,7 +52,7 @@ export default function AboutInfoPage() {
       {/* Vision, Mission, Values - Animated Cards with Icons */}
       <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
         {[
-          { title: "Our Vision", content: " As a pharmaceutical company, our vision is to dominate critical care segment by launching a maximum number of inectionn products. our focus is on developing comprehensive range of injectable products, including 2ml, 5ml, 10ml, 100ml, 250ml and 500ml. We aim to launch these products by 2025, covering the full spectrum of critical care segments.", icon: <FaEye className="text-emerald-600 text-4xl md:text-5xl mx-auto mb-4" /> },
+          { title: "Our Vision", content: " As a pharmaceutical company, our vision is to dominate critical care segment by launching a maximum number of injection products. our focus is on developing comprehensive range of injectable products, including 2ml, 5ml, 10ml, 100ml, 250ml and 500ml. We aim to launch these products by 2025, covering the full spectrum of critical care segments.", icon: <FaEye className="text-emerald-600 text-4xl md:text-5xl mx-auto mb-4" /> },
           { title: "Our Mission", content: "Our mission is to provide high-quality critical care injections that ensure customer satisfaction, while expanding our reach to a maximum number of dealers and hospitals. If you're interested in doing business with us and earning good profits, you can join our mission.", icon: <FaBullseye className="text-emerald-600 text-4xl md:text-5xl mx-auto mb-4" /> },
           { title: "Our Values", content: "We uphold integrity, innovation, and a patient-first mindset in every aspect of our business. Our commitment is to ensure ethical manufacturing, transparent practices, and high-quality injectable products, maintaining strict adherence to safety regulations.", icon: <FaHeart className="text-emerald-600 text-4xl md:text-5xl mx-auto mb-4" /> }
         ].map((item, index) => (
