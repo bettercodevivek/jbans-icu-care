@@ -44,9 +44,13 @@ const EnquiryForm = () => {
     <div className="max-w-lg sm:w-full w-80 mx-auto bg-gray-100 shadow-xl border-solid border-2 rounded-lg p-6 my-8">
       
       {/* Catchy Heading */}
-      <h2 className="text-3xl font-bold text-center text-emerald-600 mb-6">
-        Get in Touch – We're Here to Help! ✨
+      <div className="flex flex-col items-center justify-center">
+      <img src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" className="h-20 w-36"/>
+      <h2 className="text-2xl md:text-3xl font-bold text-center text-emerald-600 mb-6">
+        Partner With Us - Submit Your Query ✨
       </h2>
+      </div>
+      
 
       <form onSubmit={sendEmail} className="space-y-4">
         
