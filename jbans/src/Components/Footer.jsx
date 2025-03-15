@@ -21,11 +21,11 @@ const Footer = () => {
                 <div className="flex flex-col items-center md:items-start">
                     <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
                     <nav className="flex flex-col space-y-2 text-gray-300">
-                        <Link to='/home' className="hover:text-emerald-400 flex items-center gap-2"><FaCapsules /> Home</Link>
-                        <Link to="/about" className="hover:text-emerald-400 flex items-center gap-2"><FaFlask /> About Us</Link>
-                        <Link to="/products" className="hover:text-emerald-400 flex items-center gap-2"><FaCapsules /> Our Products</Link>
-                        <Link to="/quality" className="hover:text-emerald-400 flex items-center gap-2"><FaFlask /> Quality & R&D</Link>
-                        <Link to="/contact" className="hover:text-emerald-400 flex items-center gap-2"><FaEnvelope /> Contact Us</Link>
+                        <Link to='/home' className="hover:text-[#97144d] flex items-center gap-2"><FaCapsules /> Home</Link>
+                        <Link to="/about" className="hover:text-[#97144d] flex items-center gap-2"><FaFlask /> About Us</Link>
+                        <Link to="/products" className="hover:text-[#97144d] flex items-center gap-2"><FaCapsules /> Our Products</Link>
+                        <Link to="/quality" className="hover:text-[#97144d] flex items-center gap-2"><FaFlask /> Quality & R&D</Link>
+                        <Link to="/contact" className="hover:text-[#97144d] flex items-center gap-2"><FaEnvelope /> Contact Us</Link>
                     </nav>
                 </div>
                 
@@ -57,7 +57,7 @@ const Footer = () => {
                     <button
                     
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className="mt-6 bg-emerald-600 text-white hover:bg-emerald-700 py-2 px-4 rounded-lg shadow-md flex items-center space-x-2 transition-transform transform hover:scale-110"
+                        className="mt-6 bg-[#97144d] text-white hover:bg-emerald-700 py-2 px-4 rounded-lg shadow-md flex items-center space-x-2 transition-transform transform hover:scale-110"
                     >
                         <FaArrowUp /> <span>Back to Top</span>
                     </button>
@@ -67,7 +67,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className=" font-bold text-center text-gray-400 text-sm mt-12 pt-6 border-t border-gray-700">
                 &copy; {new Date().getFullYear()} J-BANS ICU CARE PVT. LTD. All Rights Reserved.
-                <p> Designed and Developed by <a className='text-green-400' href='https://www.vevywebsolutions.online/' target='_blank'>Vevy Web Solutions</a></p>
+                <p> Designed and Developed by <a className='text-[#97144d]' href='https://www.vevywebsolutions.online/' target='_blank'>Vevy Web Solutions</a></p>
             </div>
         </footer>
     );

@@ -27,13 +27,13 @@ const ProductCatalog = () => {
 
   return (
     <section id="product-catalog" className="relative py-16 bg-white text-center">
-      <h2 className="text-3xl md:text-4xl md:font-bold font-semibold text-emerald-600 mb-8 drop-shadow-sm">
+      <h2 className="text-3xl md:text-4xl md:font-bold font-semibold text-[#97144d] mb-8 drop-shadow-sm">
         Our Product Catalog
       </h2>
       <div className="relative w-full max-w-lg mx-auto overflow-hidden rounded-xl shadow-lg flex items-center">
         <button
           onClick={prevSlide}
-          className="hidden md:flex absolute left-4 bg-emerald-600 text-white p-3 rounded-full shadow-md hover:bg-emerald-700 transition"
+          className="hidden md:flex absolute left-4 bg-[#97144d] text-white p-3 rounded-full shadow-md hover:bg-emerald-700 transition"
         >
           <FaArrowLeft size={20} />
         </button>
@@ -49,7 +49,7 @@ const ProductCatalog = () => {
         </div>
         <button
           onClick={nextSlide}
-          className="hidden md:flex absolute right-4 bg-emerald-600 text-white p-3 rounded-full shadow-md hover:bg-emerald-700 transition"
+          className="hidden md:flex absolute right-4 bg-[#97144d] text-white p-3 rounded-full shadow-md hover:bg-emerald-700 transition"
         >
           <FaArrowRight size={20} />
         </button>
@@ -59,7 +59,7 @@ const ProductCatalog = () => {
         {catalogImages.map((_, index) => (
           <span
             key={index}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-emerald-600 scale-110' : 'bg-gray-300'}`}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-[#97144d] scale-110' : 'bg-gray-300'}`}
           />
         ))}
       </div>

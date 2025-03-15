@@ -78,7 +78,7 @@ const Hero = () => {
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 rounded-3xl text-white px-4 md:px-8">
               <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl text-center font-semibold mb-4">{slidesContent[index].title}</h1>
               <p className="text-sm md:text-base lg:text-lg xl:text-xl text-center mb-4 px-2">{slidesContent[index].description}</p>
-              <Link to={slidesContent[index].link} className="bg-emerald-600 text-white font-bold py-2 mb-6 px-4 rounded transition-colors duration-300">
+              <Link to={slidesContent[index].link} className="bg-[#97144d] text-white font-bold py-2 mb-6 px-4 rounded transition-colors duration-300">
                 {slidesContent[index].buttonText}
               </Link>
             </div>
@@ -90,7 +90,7 @@ const Hero = () => {
       <div className="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
         <a
           href="tel:+918527187932"
-          className="bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300"
+          className="bg-[#97144d] text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition-colors duration-300"
         >
           <FaPhoneAlt size={24} />
         </a>

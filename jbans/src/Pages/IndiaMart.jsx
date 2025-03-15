@@ -5,7 +5,7 @@ const IndiaMart = () => {
   return (
     <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative top-16 mb-16 lg:top-8 md:top-8">
       <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-8">
-        We take pride in offering <span className="text-emerald-600 font-bold">high-quality</span> products and exceptional customer service. Whether you are looking for reliable suppliers or have inquiries about our offerings, we are always here to assist you. <span className="text-emerald-600 font-bold">IndiaMART</span> is one of the best platforms to connect with us, explore our catalog, and read genuine customer reviews. Feel free to reach out and experience the best in business!
+        We take pride in offering <span className="text-[#97144d] font-bold">high-quality</span> products and exceptional customer service. Whether you are looking for reliable suppliers or have inquiries about our offerings, we are always here to assist you. <span className="text-[#97144d] font-bold">IndiaMART</span> is one of the best platforms to connect with us, explore our catalog, and read genuine customer reviews. Feel free to reach out and experience the best in business!
       </p>
       
       {/* IndiaMART Logo */}
@@ -23,7 +23,7 @@ const IndiaMart = () => {
           href="https://www.indiamart.com/jbans-icu-care/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-emerald-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-emerald-700 transition"
+          className="bg-[#97144d] text-white px-6 py-3 rounded-lg shadow-md hover:bg-emerald-700 transition"
         >
           Visit Our IndiaMART Page
         </a>
@@ -32,7 +32,7 @@ const IndiaMart = () => {
       {/* Key Features Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center mb-12">
         <div className="p-6 bg-white shadow-lg rounded-lg border border-gray-200">
-          <FaCheckCircle className="text-emerald-600 text-4xl mx-auto mb-3" />
+          <FaCheckCircle className="text-[#97144d] text-4xl mx-auto mb-3" />
           <h3 className="text-xl font-semibold text-gray-800">Trusted by Thousands</h3>
           <p className="text-gray-600 mt-2">We have a strong reputation in the market with thousands of satisfied customers.</p>
         </div>

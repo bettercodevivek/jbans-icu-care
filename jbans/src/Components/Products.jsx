@@ -368,7 +368,7 @@ const Products = () => {
   return (
     <div className="container mx-auto px-6 py-10 relative">
       <motion.h1
-        className="text-4xl font-semibold text-center text-emerald-500 mb-8"
+        className="text-4xl font-semibold text-center text-[#97144d] mb-8"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -382,7 +382,7 @@ const Products = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            className="w-full px-6 py-3 bg-emerald-600 text-white rounded-lg flex items-center justify-between hover:bg-emerald-700 transition-all"
+            className="w-full px-6 py-3 bg-[#97144d] text-white rounded-lg flex items-center justify-between hover:bg-[#97121d] transition-all"
           >
             Browse Categories
             {isDropdownOpen ? <FiChevronUp size={20} /> : <FiChevronDown size={20} />}
@@ -410,7 +410,7 @@ const Products = () => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 px-6 py-3 bg-emerald-600 text-white rounded-lg hover:bg-emerald-600 transition-all"
+              className="flex items-center space-x-2 px-6 py-3 bg-[#97144d] text-white rounded-lg hover:bg-emerald-600 transition-all"
             >
               {link.icon} <span>{link.name}</span>
             </a>
@@ -426,9 +426,9 @@ const Products = () => {
           placeholder="Search for a product..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full pl-12 pr-12 py-3 border rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-600"
+          className="w-full pl-12 pr-12 py-3 border rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-[#97144d]"
         />
-        <button onClick={startListening} className="absolute right-4 text-gray-500 hover:text-emerald-600">
+        <button onClick={startListening} className="absolute right-4 text-gray-500 hover:text-[#97144d]">
           <FiMic size={22} className={isListening ? 'animate-pulse' : ''} />
         </button>
       </div>
@@ -437,7 +437,7 @@ const Products = () => {
       <a
           href="/Jbans-Product-list.pdf"
           download
-          className="bg-emerald-600 text-white flex items-center gap-2 px-6 py-3 rounded-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300"
+          className="bg-[#97144d] text-white flex items-center gap-2 px-6 py-3 rounded-lg shadow-lg hover:bg-emerald-700 transition-colors duration-300"
         >
           <FaDownload size={20} /> Download Product List
         </a>
@@ -458,7 +458,7 @@ const Products = () => {
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-300 ${
-                activeCategory === category ? 'bg-emerald-600 text-white shadow-lg' : 'bg-gray-200 text-gray-700 hover:bg-gray-300 hover:shadow-md'
+                activeCategory === category ? 'bg-[#97144d] text-white shadow-lg' : 'bg-gray-200 text-gray-700 hover:bg-gray-300 hover:shadow-md'
               }`}
             >
               {category}
