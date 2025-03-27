@@ -3,7 +3,7 @@ import { FaStar, FaDownload, FaCheckCircle } from "react-icons/fa";
 
 const IndiaMart = () => {
   return (
-    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative top-16 mb-16 lg:top-8 md:top-8">
+    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 relative top-0 mb-16 lg:top-8 md:top-8">
       <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-8">
         We take pride in offering <span className="text-[#97144d] font-bold">high-quality</span> products and exceptional customer service. Whether you are looking for reliable suppliers or have inquiries about our offerings, we are always here to assist you. <span className="text-[#97144d] font-bold">IndiaMART</span> is one of the best platforms to connect with us, explore our catalog, and read genuine customer reviews. Feel free to reach out and experience the best in business!
       </p>
