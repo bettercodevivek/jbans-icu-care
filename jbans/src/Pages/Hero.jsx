@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FaPhoneAlt, FaWhatsapp, FaTimes } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp, FaTimes, FaExternalLinkAlt } from "react-icons/fa";
 
 const Hero = () => {
   const ImageSlide = [
@@ -14,20 +14,26 @@ const Hero = () => {
     {
       title: "WELCOME TO JBANS ICU CARE PVT. LTD.",
       description: "BEST CRITICAL CARE MEDICINE COMPANY",
-      buttonText: "Check our Products",
-      link: "/products",
+      buttonText1: "Check our Products",
+      buttonText2: "Visit Our IndiaMart Page",
+      link1: "/products",
+      link2:"https://www.indiamart.com/jbans-icu-care/",
     },
     {
       title: "TOP CRITICAL CARE MEDICINE COMPANY",
       description: "WE DELIVER THE BEST CRITICAL CARE PHARMACEUTICAL SERVICES",
-      buttonText: "Check our Products",
-      link: "/products",
+      buttonText1: "Check our Products",
+      buttonText2: "Visit Our IndiaMart Page",
+      link1: "/products",
+      link2:"https://www.indiamart.com/jbans-icu-care/",
     },
     {
       title: "BEST CRITICAL CARE INJECTION MANUFACTURER IN INDIA",
       description: "WE AIM TO CATER OUR CRITICAL CARE SERVICES AT A GLOBAL LEVEL",
-      buttonText: "Check our Products",
-      link: "/products",
+      buttonText1: "Check our Products",
+      buttonText2: "Visit Our IndiaMart Page",
+      link1: "/products",
+      link2:"https://www.indiamart.com/jbans-icu-care/",
     },
   ];
 
@@ -78,9 +84,19 @@ const Hero = () => {
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 rounded-3xl text-white px-4 md:px-8">
               <h1 className="text-xl md:text-xl lg:text-2xl xl:text-3xl text-center font-semibold mb-4">{slidesContent[index].title}</h1>
               <p className="text-sm md:text-base lg:text-lg xl:text-xl text-center mb-4 px-2">{slidesContent[index].description}</p>
-              <Link to={slidesContent[index].link} className="bg-[#97144d] text-white font-bold py-2 mb-6 px-4 rounded transition-colors duration-300">
-                {slidesContent[index].buttonText}
-              </Link>
+              <Link
+  to={slidesContent[index].link1}
+  className="bg-[#97144d] text-white font-normal py-2 mb-4 px-4 rounded transition-colors duration-300 flex items-center gap-2"
+>
+  {slidesContent[index].buttonText1} <FaExternalLinkAlt size={14} />
+</Link>
+
+<Link
+  to={slidesContent[index].link2}
+  className="bg-[#97144d] text-white font-normal py-2 mb-6 px-4 rounded transition-colors duration-300 flex items-center gap-2"
+>
+  {slidesContent[index].buttonText2} <FaExternalLinkAlt size={14} />
+</Link>
             </div>
           </div>
         ))}
