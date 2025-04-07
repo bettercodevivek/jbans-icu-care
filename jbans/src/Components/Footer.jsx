@@ -67,7 +67,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className=" font-bold text-center text-gray-400 text-sm mt-12 pt-6 border-t border-gray-700">
                 &copy; {new Date().getFullYear()} J-BANS ICU CARE PVT. LTD. All Rights Reserved.
-                <p> Designed and Developed by <a className='text-[#97144d]' href='https://www.vevywebsolutions.online/' target='_blank'>Vevy Web Solutions</a></p>
+                <p> Designed and Developed by <a className='text-[#97144d]' href='https://github.com/bettercodevivek' target='_blank'>BetterCodeVivek(Vivek Singh)</a></p>
             </div>
         </footer>
     );
