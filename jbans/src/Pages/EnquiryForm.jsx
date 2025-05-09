@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "@emailjs/browser";
-import { FaUser, FaEnvelope, FaPhone, FaCommentDots, FaPhoneAlt, FaHandshake, FaPaperPlane } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaPhoneAlt, FaCommentDots, FaPaperPlane } from "react-icons/fa";
 
 const EnquiryForm = () => {
   const [formData, setFormData] = useState({
@@ -21,19 +20,28 @@ const EnquiryForm = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send("service_74q4lfg", "template_whb5zvf", formData, "CO8MTGj7-PgUa6k1w")
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
+    const formDataToSubmit = new FormData();
+    formDataToSubmit.append("name", formData.name);
+    formDataToSubmit.append("email", formData.email);
+    formDataToSubmit.append("phone", formData.phone);
+    formDataToSubmit.append("message", formData.message);
+
+    fetch("https://formspree.io/f/xeogzapp", {  
+      method: "POST",
+      body: formDataToSubmit,
+    })
+      .then((response) => {
+        if (response.ok) {
           setStatus({ type: "success", message: "Enquiry sent successfully!" });
           setFormData({ name: "", email: "", phone: "", message: "" });
-        },
-        (error) => {
-          console.log("FAILED...", error);
-          setStatus({ type: "error", message: "Something went wrong!" });
+        } else {
+          throw new Error("Something went wrong!");
         }
-      )
+      })
+      .catch((error) => {
+        console.log("FAILED...", error);
+        setStatus({ type: "error", message: "Something went wrong!" });
+      })
       .finally(() => {
         setLoading(false);
         setTimeout(() => setStatus(null), 5000);
@@ -45,13 +53,12 @@ const EnquiryForm = () => {
       
       {/* Catchy Heading */}
       <div className="flex flex-col items-center justify-center">
-      <img src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" className="h-20 w-36"/>
-      <h2 className="text-2xl md:text-3xl font-bold text-center text-[#97144d] mb-6">
-        Let's Connect – Send Your Inquiry
-      </h2>
+        <img src="https://i.postimg.cc/cJ2JxqMX/IMG-20240619-WA0009-1-removebg-preview.webp" className="h-20 w-36"/>
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#97144d] mb-6">
+          Let's Connect – Send Your Inquiry
+        </h2>
       </div>
       
-
       <form onSubmit={sendEmail} className="space-y-4">
         
         {/* Name Input */}
@@ -112,13 +119,13 @@ const EnquiryForm = () => {
 
         {/* Submit Button */}
         <button
-  type="submit"
-  disabled={loading}
-  className="w-full bg-[#97144d] text-sm md:text-xl text-white p-3 rounded-md shadow-md hover:bg-emerald-700 transition duration-300 disabled:opacity-50 flex items-center justify-center gap-2"
->
-  {loading ? "Sending..." : "Send Enquiry"}
-  <FaPaperPlane className="text-white text-sm md:text-lg" />
-</button>
+          type="submit"
+          disabled={loading}
+          className="w-full bg-[#97144d] text-sm md:text-xl text-white p-3 rounded-md shadow-md hover:bg-emerald-700 transition duration-300 disabled:opacity-50 flex items-center justify-center gap-2"
+        >
+          {loading ? "Sending..." : "Send Enquiry"}
+          <FaPaperPlane className="text-white text-sm md:text-lg" />
+        </button>
       </form>
 
       {/* Status Message */}
